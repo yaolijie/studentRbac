@@ -1,0 +1,61 @@
+create table t_role(
+  id varchar(64) primary key not null,
+  rolename varchar(32),
+  code varchar(12),
+  stardate date,
+  enddate date,
+  remarks varchar(128),
+  createname varchar(32),
+  createtime date,
+  updatename varchar(32),
+  updatetime date
+
+);
+
+create table t_person(
+  id varchar(64) primary key not null,
+  personname varchar(64),
+  personid varchar(18),
+  sex varchar(2),
+  age int,
+  fullname varchar(44),
+  native varchar(10),
+  emaill varchar(20),
+  passworld varchar(12),
+  birth varchar(12),
+  positionId varchar(64),--出生地
+  remarks varchar(256),
+  createname varchar(32),
+  createtime date,
+  updatename varchar(32),
+  updatetime date
+
+);
+
+create table t_role_connect_person (
+  roleid varchar(64),
+  person varchar(64),
+
+);
+
+create table t_organ (
+  id varchar(64) primary key not null,
+  organname varchar(128),
+  type varchar(10),--机构是属于机构，还是部门
+  code varchar(10),
+  parentid varchar(64),
+  address varchar(526),
+  phone varchar(11),
+  remark varchar(526),
+  createname varchar(32),
+  createtime date ,
+  updatename varchar(32),
+  updatetime date
+);
+create table t_organ_connect_person (
+  organid varchar(64) primary key not null,
+  personId varchar(64)
+);
+
+
+
