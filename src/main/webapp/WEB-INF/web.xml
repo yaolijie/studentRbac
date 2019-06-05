@@ -4,7 +4,9 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
           http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
-    
+    <listener>
+        <listener-class>com.rbac.studengrbac.listener.D2DBServertStarListener</listener-class>
+    </listener>
     <servlet>
         <servlet-name>lendServlet</servlet-name>
         <servlet-class>com.rbac.studengrbac.servlet.lendServlet</servlet-class>
