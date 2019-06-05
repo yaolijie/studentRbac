@@ -10,16 +10,11 @@
     <script type="text/javascript">
         $(function () {
             $("#register").click(function () {
-                $.ajax({
-                    method:'get',
-                    url:'<%=path%>/lendServlet?t=register'
-                });
+                window.location.href="view/insert/insertPerson.jsp"
             });
         });
         function jsp(){
-            //window.location.href='Intal.jsp';
-            //top.location='Intal.jsp';
-            window.location="Intal.jsp";
+            window.location.href="view/Intal.jsp"
         }
     </script>
 </head>

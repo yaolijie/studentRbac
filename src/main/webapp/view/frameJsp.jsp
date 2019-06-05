@@ -17,12 +17,12 @@
     }
 </style>
 <div>
-    <div id="headdiv">
-        <label>
-            <span>用户： </span><span id="username">${user.username}</span>
-        </label>
-        <label>
-            <button id="signout">推出</button>
-        </label>
-    </div>
+    <%--<div id="headdiv">--%>
+        <%--<label>--%>
+            <%--<span>用户： </span><span id="username">${user.username}</span>--%>
+        <%--</label>--%>
+        <%--<label>--%>
+            <%--<button id="signout">退出</button>--%>
+        <%--</label>--%>
+    <%--</div>--%>
 </div>
