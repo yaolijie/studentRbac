@@ -4,9 +4,35 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
           http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
+
+    <!--h2浏览器访问配置-->
+    <!--用于数据库启动和数据库停止-->
     <listener>
         <listener-class>com.rbac.studengrbac.listener.D2DBServertStarListener</listener-class>
     </listener>
+    <!--结束-->
+    <!--使用h2控制台的servlet H2控制台是一个独立的应用程序，包括自己的web服务器，但他可以作为一个Servlet使用-->
+    <servlet>
+        <servlet-name>H2Console</servlet-name>
+        <servlet-class>org.h2.server.web.WebServlet</servlet-class>
+        <init-param>
+            <param-name>webAllowOthers</param-name>
+            <param-value></param-value>
+        </init-param>
+        <init-param>
+            <param-name>trace</param-name>
+            <param-value></param-value>
+        </init-param>
+        <!--启动顺序 1 -->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <!--访问映射-->
+    <servlet-mapping>
+        <servlet-name>H2Console</servlet-name>
+        <url-pattern>/console/*</url-pattern>
+    </servlet-mapping>
+    <!--h2 配置结束 可以在浏览器中访问-->
+
     <servlet>
         <servlet-name>lendServlet</servlet-name>
         <servlet-class>com.rbac.studengrbac.servlet.lendServlet</servlet-class>
@@ -15,7 +41,26 @@
         <servlet-name>lendServlet</servlet-name>
         <url-pattern>/lendServlet</url-pattern>
     </servlet-mapping>
-    
+
+    <!--h2自定义函数引入-->
+    <servlet>
+        <servlet-name>CreateFunctionServlet</servlet-name>
+        <servlet-class>com.rbac.studengrbac.InitalData.CreateFunctionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateFunctionServlet</servlet-name>
+        <url-pattern>/CreateFunctionServlet</url-pattern>
+    </servlet-mapping>
+    <!--数据库建表和初始化数据-->
+    <servlet>
+        <servlet-name>CreateTableServlet</servlet-name>
+        <servlet-class>com.rbac.studengrbac.InitalData.CreateTableServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateFunctionServlet</servlet-name>
+        <url-pattern>/CreateTableServlet</url-pattern>
+    </servlet-mapping>
+
     <welcome-file-list>
         <welcome-file>view/index.jsp</welcome-file>
     </welcome-file-list>

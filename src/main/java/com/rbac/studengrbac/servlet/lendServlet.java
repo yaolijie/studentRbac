@@ -1,7 +1,7 @@
 package com.rbac.studengrbac.servlet;
 
 import com.rbac.studengrbac.hendle.InsertHeadle;
-import com.sun.xml.internal.ws.resources.HttpserverMessages;
+import com.rbac.studengrbac.hendle.LendHendle;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -28,5 +28,10 @@ public class lendServlet  extends HttpServlet {
 
     public void lend(HttpServletRequest request,HttpServletResponse response){
 
+        LendHendle.lend(request,response);
+    }
+
+    public void doPost(HttpServletRequest request,HttpServletResponse response) throws IOException,ServletException {
+        lend(request,response);
     }
 }

@@ -1,0 +1,4 @@
+--插入角色
+insert into t_role values();
+insert into t_person
+values();

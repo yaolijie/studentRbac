@@ -16,10 +16,15 @@
                 });
             });
         });
+        function jsp(){
+            //window.location.href='Intal.jsp';
+            //top.location='Intal.jsp';
+            window.location="Intal.jsp";
+        }
     </script>
 </head>
 <body>
-<form action='<%=path%>/lendServlet?t=lend' method="get" style="align-items: center;">
+<form action='<%=path%>/lendServlet?t=lend' method="post" style="align-items: center;">
     <table>
         <tr>
             <td>用户名 ：</td>
@@ -39,6 +44,11 @@
             </td>
             <td>
                 <input type="button" value="注册" id="register">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="初始化数据库" onclick="jsp();">
             </td>
         </tr>
     </table>
