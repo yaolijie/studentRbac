@@ -23,7 +23,7 @@ public class lendServlet  extends HttpServlet {
 
     public void registerUser(HttpServletRequest request, HttpServletResponse response){
 
-        InsertHeadle.registerUser();
+        InsertHeadle.registerUser(request,response);
     }
 
     public void lend(HttpServletRequest request,HttpServletResponse response){
