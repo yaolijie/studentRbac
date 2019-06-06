@@ -17,7 +17,7 @@
         function table(){
             $.ajax({
                 url:'<%=path%>/CreateTableServlet?t=createTable',
-                method:'post'
+                method:'get'
             })
         }
         function functionCreate(){
@@ -29,7 +29,7 @@
         function insertData(){
             $.ajax({
                 url:'<%=path%>/CreateTableServlet?t=insertData',
-                method:'post'
+                method:'get'
             })
         }
     </script>

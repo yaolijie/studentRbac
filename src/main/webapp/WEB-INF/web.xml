@@ -57,7 +57,7 @@
         <servlet-class>com.rbac.studengrbac.InitalData.CreateTableServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>CreateFunctionServlet</servlet-name>
+        <servlet-name>CreateTableServlet</servlet-name>
         <url-pattern>/CreateTableServlet</url-pattern>
     </servlet-mapping>
 

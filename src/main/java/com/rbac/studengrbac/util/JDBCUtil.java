@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class JDBCUtil {
 
     private static Connection connection=null;
-    {
+    static {
         try{
             Class.forName("org.h2.Driver");
             connection=DriverManager.getConnection("jdbc:h2:~/test","sa","");
