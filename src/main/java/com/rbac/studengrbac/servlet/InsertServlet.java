@@ -17,6 +17,8 @@ public class InsertServlet extends HttpServlet {
         String t=request.getParameter("t");
         if ("insertRole".equalsIgnoreCase(t)) {
             InsertHeadle.insertRole(request);
+        }else if ("insertOrgan".equalsIgnoreCase(t)){
+            InsertHeadle.insertOrgan(request);
         }
     }
 
@@ -26,6 +28,8 @@ public class InsertServlet extends HttpServlet {
         String t=request.getParameter("t");
         if ("insertRoleJsp".equalsIgnoreCase(t)){
             request.getRequestDispatcher("/view/insert/insertRole.jsp").forward(request,response);
+        }else if ("insertOrganJsp".equalsIgnoreCase(t)){
+            request.getRequestDispatcher("/view/insert/insertRogan.jsp").forward(request,response);
         }
     }
     @Override
