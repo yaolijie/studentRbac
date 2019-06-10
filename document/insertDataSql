@@ -1,5 +1,9 @@
 --插入角色
 insert into t_role values(uuid(),'manage','0',sysDate(),sysDate(),'','',sysDate(),'',sysDate());
 insert into t_role values(uuid(),'member','1',sysDate(),sysDate(),'','',sysDate(),'',sysDate());
-
+--机构
+insert into t_organ values(uuid(),'上航','1','00','','上海','1234','无','',sysDate(),'',sysDate());
+insert into t_organ values(uuid(),'杭航','1','00','','杭州','1234','无','',sysDate(),'',sysDate());
+insert into t_organ values(uuid(),'商务部','0','00','','上海','1234','无','',sysDate(),'',sysDate());
+--
 insert into t_person values(uuid(),'tom',uuid(),'男',20,'tom','usa','','','123','','','','',sysDate(),'',sysDate());

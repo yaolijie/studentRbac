@@ -75,13 +75,21 @@
         <url-pattern>/LoginServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>QueryServlet</servlet-name>
+        <servlet-class>com.rbac.studengrbac.servlet.QueryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QueryServlet</servlet-name>
+        <url-pattern>/QueryServlet</url-pattern>
+    </servlet-mapping>
     <!--登陆过滤器-->
     <filter>
         <filter-name>CheckLoginFilter</filter-name>
         <filter-class>com.rbac.studengrbac.filter.CheckLoginFilter</filter-class>
         <init-param>
-            <param-name>LoginServlet</param-name>
-            <param-value>/LoginServlet</param-value>
+            <param-name>needCheckURI</param-name>
+            <param-value>/LoginServlet,/lendServlet</param-value>
         </init-param>
     </filter>
     <filter-mapping>

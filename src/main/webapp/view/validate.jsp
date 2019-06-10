@@ -64,8 +64,8 @@
         randomCode.append(strRand);
     }
 
-    //将四位的数字验证码保存到session中
-    session.setAttribute("randomCode",randomCode.toString());
+    //将四位的数字验证码保存到request中
+    request.setAttribute("randomCode",randomCode.toString());
 
     //禁止图像缓存
     response.setHeader("Prama","no-cache");

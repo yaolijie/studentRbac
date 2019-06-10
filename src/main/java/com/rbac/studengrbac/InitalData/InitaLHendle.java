@@ -99,5 +99,32 @@ public class InitaLHendle {
 
     public static void insertData(){
 
+        Connection connection=null;
+        Statement statement=null;
+        try{
+            connection=JDBCUtil.getConnection();
+            statement=connection.createStatement();
+            String sql="--插入角色\n" +
+                    "insert into t_role values(uuid(),'manage','0',sysDate(),sysDate(),'','',sysDate(),'',sysDate());\n" +
+                    "insert into t_role values(uuid(),'member','1',sysDate(),sysDate(),'','',sysDate(),'',sysDate());\n" +
+                    "--机构\n" +
+                    "insert into t_organ values(uuid(),'上航','1','00','','上海','1234','无','',sysDate(),'',sysDate());\n" +
+                    "insert into t_organ values(uuid(),'杭航','1','00','','杭州','1234','无','',sysDate(),'',sysDate());\n" +
+                    "insert into t_organ values(uuid(),'商务部','0','00','','上海','1234','无','',sysDate(),'',sysDate());";
+            statement.execute(sql);
+            connection.commit();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            if (statement!=null){
+                try{
+                    statement.close();
+                    if (connection!=null)
+                        connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 }

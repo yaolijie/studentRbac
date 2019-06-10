@@ -5,10 +5,14 @@
     <title>登陆系统</title>
     <%
         String path=request.getContextPath();
+        String error=(String)request.getAttribute("error");
     %>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
         $(function () {
+            if('<%=error%>'!='null'&&'<%=error%>'.length>1) {
+                alert('<%=error%>');
+            }
             $("#register").click(function () {
                 window.location.href="view/insert/insertPerson.jsp"
             });

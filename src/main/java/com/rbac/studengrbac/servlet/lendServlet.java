@@ -28,26 +28,40 @@ public class lendServlet  extends HttpServlet {
 
     public void lend(HttpServletRequest request,HttpServletResponse response){
 
-        Person resule=LendHendle.lend(request,response);
-        if (resule==null){
-            try{
-                request.setAttribute("error","用户名或密码错误！");
-                request.getRequestDispatcher("/view/index.jsp").forward(request,response);
-            }catch (IOException e) {
-                e.printStackTrace();
-            } catch (ServletException e) {
-                e.printStackTrace();
+        String code= (String) request.getAttribute("randomCode");
+        if(code.equalsIgnoreCase(request.getParameter("validationCode"))){
+            Person resule=LendHendle.lend(request,response);
+            if (resule==null){
+                try{
+                    request.setAttribute("error","用户名或密码错误！");
+                    request.getRequestDispatcher("/view/index.jsp").forward(request,response);
+                }catch (IOException e) {
+                    e.printStackTrace();
+                } catch (ServletException e) {
+                    e.printStackTrace();
+                }
+            }else{
+                try{
+                    request.getSession().setAttribute("person",resule);
+                    request.getRequestDispatcher("/view/welcom.jsp").forward(request,response);
+                }catch (IOException e) {
+                    e.printStackTrace();
+                } catch (ServletException e) {
+                    e.printStackTrace();
+                }
             }
         }else{
             try{
-                request.getSession().setAttribute("person",resule);
-                request.getRequestDispatcher("/view/welcom.jsp").forward(request,response);
-            }catch (IOException e) {
-                e.printStackTrace();
+                request.setAttribute("error","验证码错误！");
+                request.getRequestDispatcher("/view/index.jsp").forward(request,response);
             } catch (ServletException e) {
                 e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
+
         }
+
 
     }
 
