@@ -8,18 +8,18 @@
     %>
 </head>
 <body>
-    <form id="insertPerson">
+    <form id="insertPerson" action="<%=path%>/lendServlet?t=register" method="post">
         <table>
             <tr>
                 <td>姓名 ：</td>
                 <td>
-                    <input type="text" name="fullname">
+                    <input type="text" name="fullname" id="fullname">
                 </td>
             </tr>
             <tr>
                 <td>用户名 ：</td>
                 <td>
-                    <input type="text" name="personname">
+                    <input type="text" name="personname" id="personname">
                 </td>
                 <td>出生日期：</td>
                 <td>
@@ -53,17 +53,17 @@
             <tr>
                 <td>电子邮箱：</td>
                 <td>
-                    <input type="text" name="emaill">
+                    <input type="text" name="emaill" id="emaill">
                 </td>
             </tr>
             <tr>
                 <td>所属单位 ：</td>
                 <td>
-                    <input type="text" name="orgname">
+                    <input type="text" name="orgname" id="orgname">
                 </td>
                 <td>职位 ：</td>
                 <td>
-                    <input type="text" name="orgtype">
+                    <input type="text" name="orgtype" id="orgtype">
                 </td>
             </tr>
             <tr>
@@ -79,14 +79,14 @@
             <tr>
                 <td>备注：</td>
                 <td>
-                    <input type="text" name="remarks">
+                    <input type="text" name="remarks" id="remarks">
                 </td>
             </tr>
         </table>
         <table>
             <tr>
                 <td>
-                    <input type="button" id="submit" value="提交">
+                    <input type="submit" id="submit" value="提交">
                 </td>
                 <td>
                     <input type="reset" value="重置">
@@ -98,18 +98,18 @@
 <script type="text/javascript">
     $(function () {
 
-        $("#submit").click(function () {
-            var passworld=$("#passworld").val();
-            var qpassworld=$("#qpassworld").val();
-            if (passworld==qpassworld){
-                $.ajax({
-                    url:'<%=path%>/lendServlet?t=register',
-                    method:'get'
-                });
-            }else{
-                alert("两次密码输入不一致！！");
-            }
-        });
+        <%--$("#submit").click(function () {--%>
+            <%--var passworld=$("#passworld").val();--%>
+            <%--var qpassworld=$("#qpassworld").val();--%>
+            <%--if (passworld==qpassworld){--%>
+                <%--$.ajax({--%>
+                    <%--url:'<%=path%>/lendServlet?t=register',--%>
+                    <%--method:'post'--%>
+                <%--});--%>
+            <%--}else{--%>
+                <%--alert("两次密码输入不一致！！");--%>
+            <%--}--%>
+        <%--});--%>
     });
 </script>
 </html>

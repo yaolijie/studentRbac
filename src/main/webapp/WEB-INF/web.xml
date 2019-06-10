@@ -10,7 +10,11 @@
     <listener>
         <listener-class>com.rbac.studengrbac.listener.D2DBServertStarListener</listener-class>
     </listener>
-    <!--结束-->
+
+    <!--创建管理员用户账号-->
+    <listener>
+        <listener-class>com.rbac.studengrbac.listener.SystemManagerCreaterListener</listener-class>
+    </listener>
     <!--使用h2控制台的servlet H2控制台是一个独立的应用程序，包括自己的web服务器，但他可以作为一个Servlet使用-->
     <servlet>
         <servlet-name>H2Console</servlet-name>
@@ -60,6 +64,30 @@
         <servlet-name>CreateTableServlet</servlet-name>
         <url-pattern>/CreateTableServlet</url-pattern>
     </servlet-mapping>
+    <!--结束-->
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.rbac.studengrbac.servlet.LoginAndLogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--登陆过滤器-->
+    <filter>
+        <filter-name>CheckLoginFilter</filter-name>
+        <filter-class>com.rbac.studengrbac.filter.CheckLoginFilter</filter-class>
+        <init-param>
+            <param-name>LoginServlet</param-name>
+            <param-value>/LoginServlet</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>CheckLoginFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
     <welcome-file-list>
         <welcome-file>view/index.jsp</welcome-file>

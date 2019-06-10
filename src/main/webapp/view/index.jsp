@@ -30,7 +30,14 @@
         <tr>
             <td>密码： </td>
             <td>
-                <input type="text" name="passworld" id="passworld" >
+                <input type="password" name="passworld" id="passworld" >
+            </td>
+        </tr>
+        <tr>
+            <td>验证码 ： </td>
+            <td>
+                <input type="text" name="validationCode" id="validationCode"/>
+                <img id="validationCode_img"  src="view/validate.jsp"><br>
             </td>
         </tr>
         <tr>

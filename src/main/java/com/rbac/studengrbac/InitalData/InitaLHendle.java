@@ -78,6 +78,11 @@ public class InitaLHendle {
             statement.execute(createSql);
             connection.commit();
         } catch (SQLException e) {
+            try{
+                connection.rollback();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
             e.printStackTrace();
         }finally {
             if(statement!=null){
