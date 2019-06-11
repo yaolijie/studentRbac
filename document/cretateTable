@@ -2,6 +2,7 @@
 create table t_role(
   id varchar(64) primary key not null,
   rolename varchar(32),
+  fullname varchar(64),
   code varchar(12),
   stardate date,
   enddate date,
@@ -12,7 +13,6 @@ create table t_role(
   updatetime date
 
 );
-
 create table t_person(
   id varchar(64) primary key not null,
   personname varchar(64),
@@ -32,13 +32,11 @@ create table t_person(
   updatetime date
 
 );
-
 create table t_role_connect_person (
   roleid varchar(64),
   person varchar(64),
 
 );
-
 create table t_organ (
   id varchar(64) primary key not null,
   organname varchar(128),
@@ -57,6 +55,31 @@ create table t_organ_connect_person (
   organid varchar(64) primary key not null,
   personId varchar(64)
 );
+
+create table t_power(
+    id varchaer(64) primary key not null,
+    type varchar(2),
+    createtime date;
+);
+
+create table t_operation_power{
+    id varchar(64) primary key not null,
+    name varchar(32),
+    code varchar(20),
+    intercepUrl varchar(256),
+    parentid varchar(64),
+    createTime date;
+};
+
+create table t_operation_con_power(
+    powerid varchar(64),
+    opid varchar(64)
+);
+
+
+
+
+
 
 
 

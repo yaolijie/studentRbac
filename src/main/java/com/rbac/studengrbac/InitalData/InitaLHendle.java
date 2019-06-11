@@ -19,7 +19,8 @@ public class InitaLHendle {
             statement=connection.createStatement();
             String createSql="create table t_role(\n" +
                     "  id varchar(64) primary key not null,\n" +
-                    "  rolename varchar(32),\n" +
+                    "  rolename varchar(32)," +
+                    "fullname VARCHAR (64),\n" +
                     "  code varchar(12),\n" +
                     "  stardate date,\n" +
                     "  enddate date,\n" +

@@ -1,17 +1,13 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: lj
-  Date: 2019/6/10
-  Time: 22:50
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>添加机构</title>
+    <%
+        String path=request.getContextPath();
+    %>
 </head>
 <body>
-<form action="/InsertServlet?t=insertOrgan" method="post">
+<form action="<%=path%>/InsertServlet?t=insertOrgan" method="post">
     <table>
         <tr>
             <td>机构名称：</td>
@@ -22,11 +18,11 @@
         <tr>
             <td>机构类型：</td>
             <td>
-                <section id="">
-                    <option value="" name="type" checked></option>
-                    <option value="1" name="type">公司</option>
-                    <option value="0" name="type">部门</option>
-                </section>
+                <select id="" name="type">
+                    <option value=""></option>
+                    <option value="1">公司</option>
+                    <option value="0">部门</option>
+                </select>
             </td>
         </tr>
         <tr>

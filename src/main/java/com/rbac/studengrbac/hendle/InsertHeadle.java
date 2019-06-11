@@ -5,6 +5,7 @@ import com.rbac.studengrbac.util.JDBCUtil;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
@@ -129,15 +130,16 @@ public class InsertHeadle {
             String id=UUID.randomUUID().toString();
             preparedStatement.setString(1,id);
             preparedStatement.setString(2,request.getParameter("rolename"));
-            preparedStatement.setString(3,request.getParameter("code"));
-            preparedStatement.setString(4,request.getParameter("stardate"));
-            preparedStatement.setString(5,request.getParameter("enddate"));
-            preparedStatement.setString(6,request.getParameter("remarks"));
-            preparedStatement.setString(7,"");
+            preparedStatement.setString(3,request.getParameter("fullname"));
+            preparedStatement.setString(4,request.getParameter("code"));
+            preparedStatement.setString(5,request.getParameter("stardate"));
+            preparedStatement.setString(6,request.getParameter("enddate"));
+            preparedStatement.setString(7,request.getParameter("remarks"));
+            preparedStatement.setString(8,"");
             java.sql.Date date=new Date((new java.util.Date()).getTime());
-            preparedStatement.setDate(8,date);
-            preparedStatement.setString(9,"");
-            preparedStatement.setDate(10,date);
+            preparedStatement.setDate(9,date);
+            preparedStatement.setString(10,"");
+            preparedStatement.setDate(11,date);
             preparedStatement.execute();
             connection.commit();
         } catch (SQLException e) {
@@ -156,6 +158,47 @@ public class InsertHeadle {
     }
 
     public static void insertOrgan(HttpServletRequest request){
-
+        Connection connection=null;
+        PreparedStatement preparedStatement=null;
+        try{
+            connection=JDBCUtil.getConnection();
+            String sql="insert into t_organ VALUES (?,?,?,?,?,?,?,?,?,?,?,?);";
+            preparedStatement=connection.prepareStatement(sql);
+            String uuid=UUID.randomUUID().toString();
+            preparedStatement.setString(1,uuid);
+            preparedStatement.setString(2,request.getParameter("organname"));
+            preparedStatement.setString(3,request.getParameter("type"));
+            preparedStatement.setString(4,request.getParameter("code"));
+            preparedStatement.setString(5,"");
+            preparedStatement.setString(6,request.getParameter("address"));
+            preparedStatement.setString(7,request.getParameter("phone"));
+            preparedStatement.setString(8,request.getParameter("remark"));
+            HttpSession session=request.getSession();
+            Person person=(Person) session.getAttribute("person");
+            if (person!=null){
+                preparedStatement.setString(9,person.getPersonName());
+            }else{
+                preparedStatement.setString(9,"");
+            }
+            java.sql.Date date=new Date(new java.util.Date().getTime());
+            preparedStatement.setDate(10,date);
+            preparedStatement.setString(11,"");
+            preparedStatement.setDate(12,date);
+            preparedStatement.execute();
+            connection.commit();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            if (preparedStatement!=null){
+                try{
+                    preparedStatement.close();
+                    if (connection!=null){
+                        connection.close();
+                    }
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 }

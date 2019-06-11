@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: lj
-  Date: 2019/6/10
-  Time: 21:38
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -14,10 +7,16 @@
     %>
 </head>
 <body>
-<form id="roleForm" action="<%=path%>/InsertServlet?t=insertRole">
+<form id="roleForm" action="<%=path%>/InsertServlet?t=insertRole"  method="post">
     <tale >
         <tr>
-            <td>角色名:</td>
+            <td>角色中文名：</td>
+            <td>
+                <input type="text" name="fullname">
+            </td>
+        </tr>
+        <tr>
+            <td>角色英文名:</td>
             <td>
                 <input type="text" id="rolename" name="rolename">
             </td>
