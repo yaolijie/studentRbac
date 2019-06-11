@@ -6,6 +6,7 @@ import com.rbac.studengrbac.util.JDBCUtil;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.UUID;
@@ -116,5 +117,45 @@ public class InsertHeadle {
                 }
             }
         }
+    }
+
+    public static void insertRole(HttpServletRequest request){
+        Connection connection=null;
+        PreparedStatement preparedStatement=null;
+        try{
+            connection=JDBCUtil.getConnection();
+            String sql="insert into t_rolr values(?,?,?,?,?,?,?,?,?,?);";
+            preparedStatement=connection.prepareStatement(sql);
+            String id=UUID.randomUUID().toString();
+            preparedStatement.setString(1,id);
+            preparedStatement.setString(2,request.getParameter("rolename"));
+            preparedStatement.setString(3,request.getParameter("code"));
+            preparedStatement.setString(4,request.getParameter("stardate"));
+            preparedStatement.setString(5,request.getParameter("enddate"));
+            preparedStatement.setString(6,request.getParameter("remarks"));
+            preparedStatement.setString(7,"");
+            java.sql.Date date=new Date((new java.util.Date()).getTime());
+            preparedStatement.setDate(8,date);
+            preparedStatement.setString(9,"");
+            preparedStatement.setDate(10,date);
+            preparedStatement.execute();
+            connection.commit();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            if (preparedStatement!=null){
+                try{
+                    preparedStatement.close();
+                    if (connection!=null)
+                        connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public static void insertOrgan(HttpServletRequest request){
+
     }
 }
