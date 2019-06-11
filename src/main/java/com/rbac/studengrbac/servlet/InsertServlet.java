@@ -19,6 +19,8 @@ public class InsertServlet extends HttpServlet {
             InsertHeadle.insertRole(request);
         }else if ("insertOrgan".equalsIgnoreCase(t)){
             InsertHeadle.insertOrgan(request);
+        }else if ("insertPower".equalsIgnoreCase(t)){
+            InsertHeadle.insertPower(request);
         }
     }
 
@@ -30,6 +32,8 @@ public class InsertServlet extends HttpServlet {
             request.getRequestDispatcher("/view/insert/insertRole.jsp").forward(request,response);
         }else if ("insertOrganJsp".equalsIgnoreCase(t)){
             request.getRequestDispatcher("/view/insert/insertRogan.jsp").forward(request,response);
+        } else if ("insertPowerJsp".equalsIgnoreCase(t)) {
+            request.getRequestDispatcher("/view/insert/insertPower.jsp").forward(request,response);
         }
     }
     @Override

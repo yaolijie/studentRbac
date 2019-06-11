@@ -1,4 +1,12 @@
 --10
+
+drop table t_role;
+drop table t_person;
+drop table t_organ;
+drop table t_role_connect_person;
+drop table t_organ;
+drop table t_organ_connect_person;
+
 create table t_role(
   id varchar(64) primary key not null,
   rolename varchar(32),
@@ -65,6 +73,7 @@ create table t_power(
 create table t_operation_power{
     id varchar(64) primary key not null,
     name varchar(32),
+    fullname varchar (32),
     code varchar(20),
     intercepUrl varchar(256),
     parentid varchar(64),
@@ -75,6 +84,22 @@ create table t_operation_con_power(
     powerid varchar(64),
     opid varchar(64)
 );
+
+create table t_menu_power(
+    id varchar(64) primary key not null,
+    name varchar(64),
+    fullname varchar (32),
+    code varchar (64)
+    url varchar (128),
+    parentId varchar (64),
+    createtime date
+) ;
+
+create table t_menu_con_power(
+    powerid varchar (64),
+    menuid varchar (64);
+)
+
 
 
 

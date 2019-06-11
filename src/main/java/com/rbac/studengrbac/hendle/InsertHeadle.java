@@ -2,6 +2,7 @@ package com.rbac.studengrbac.hendle;
 
 import com.rbac.studengrbac.model.Person;
 import com.rbac.studengrbac.util.JDBCUtil;
+import org.h2.jdbcx.JdbcConnectionPool;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -192,6 +193,80 @@ public class InsertHeadle {
             if (preparedStatement!=null){
                 try{
                     preparedStatement.close();
+                    if (connection!=null){
+                        connection.close();
+                    }
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public static void insertPower(HttpServletRequest request){
+
+        Connection connection=null;
+        PreparedStatement p1=null;
+        PreparedStatement p2=null;
+        PreparedStatement p3=null;
+        try{
+            connection=JDBCUtil.getConnection();
+            String sql1="insert into t_power values(?,?,?);";
+            p1=connection.prepareStatement(sql1);
+            String powerId=UUID.randomUUID().toString();
+            String id=UUID.randomUUID().toString();
+            String type=request.getParameter("type");
+            java.sql.Date date=new Date(new java.util.Date().getTime());
+            p1.setString(1,powerId);
+            p1.setString(2,type);
+            p1.setDate(3,date);
+            if ("operation".equalsIgnoreCase(type)) {
+                String sql2="insert into t_operation_power values(?,?,?,?,?,?,?);";
+                p2=connection.prepareStatement("sql2");
+                p2.setString(1,id);
+                p2.setString(2,request.getParameter("name"));
+                p2.setString(3,request.getParameter("fullname"));
+                p2.setString(4,request.getParameter("code"));
+                p2.setString(5,request.getParameter("url"));
+                p2.setString(6,request.getParameter("parentId"));
+                p2.setDate(7,date);
+
+                String sql3="insert into t_operation_con_power values(?,?);";
+                p3=connection.prepareStatement(sql3);
+                p3.setString(1,powerId);
+                p3.setString(2,id);
+            }else{
+                String sql2="insert into t_menu_power values(?,?,?,?,?,?,?);";
+                p2=connection.prepareStatement("sql2");
+                p2.setString(1,id);
+                p2.setString(2,request.getParameter("name"));
+                p2.setString(3,request.getParameter("fullname"));
+                p2.setString(4,request.getParameter("code"));
+                p2.setString(5,request.getParameter("url"));
+                p2.setString(6,request.getParameter("parentId"));
+                p2.setDate(7,date);
+
+                String sql3="insert into t_menu_con_power values(?,?);";
+                p3=connection.prepareStatement(sql3);
+                p3.setString(1,powerId);
+                p3.setString(2,id);
+            }
+
+            p1.execute();
+            p2.execute();
+            p3.execute();
+            connection.commit();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            if (p1!=null){
+                try{
+                    p1.close();
+                    if (p2!=null){
+                        p2.close();
+                    }
+                    if (p3!=null)
+                        p3.close();
                     if (connection!=null){
                         connection.close();
                     }
