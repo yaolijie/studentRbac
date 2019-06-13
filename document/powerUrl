@@ -1,0 +1,2 @@
+--菜单权限
+查看机构 queryOrgan 4 QueryServlet/t?=queryOrgan

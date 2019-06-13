@@ -66,10 +66,9 @@ create table t_organ_connect_person (
 
 create table t_power(
     id varchaer(64) primary key not null,
-    type varchar(2),
+    type varchar(20),
     createtime date;
 );
-
 create table t_operation_power{
     id varchar(64) primary key not null,
     name varchar(32),
@@ -79,32 +78,16 @@ create table t_operation_power{
     parentid varchar(64),
     createTime date;
 };
-
-create table t_operation_con_power(
-    powerid varchar(64),
-    opid varchar(64)
-);
-
 create table t_menu_power(
     id varchar(64) primary key not null,
     name varchar(64),
     fullname varchar (32),
-    code varchar (64)
+    code varchar (64),
     url varchar (128),
     parentId varchar (64),
     createtime date
 ) ;
-
 create table t_menu_con_power(
     powerid varchar (64),
     menuid varchar (64);
-)
-
-
-
-
-
-
-
-
-
+);

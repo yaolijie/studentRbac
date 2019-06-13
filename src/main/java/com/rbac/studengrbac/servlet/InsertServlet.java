@@ -1,7 +1,6 @@
 package com.rbac.studengrbac.servlet;
 
 import com.rbac.studengrbac.hendle.InsertHeadle;
-import org.h2.command.dml.Insert;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

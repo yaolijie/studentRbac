@@ -250,11 +250,10 @@ public class InsertHeadle {
                 p3=connection.prepareStatement(sql3);
                 p3.setString(1,powerId);
                 p3.setString(2,id);
+                p1.execute();
+                p2.execute();
+                p3.execute();
             }
-
-            p1.execute();
-            p2.execute();
-            p3.execute();
             connection.commit();
         } catch (SQLException e) {
             e.printStackTrace();

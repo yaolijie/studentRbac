@@ -17,7 +17,16 @@ public class InitaLHendle {
         try{
             connection= JDBCUtil.getConnection();
             statement=connection.createStatement();
-            String createSql= "create table t_role(\n" +
+            String createSql="--10\n" +
+                    "\n" +
+                    "drop table t_role;\n" +
+                    "drop table t_person;\n" +
+                    "drop table t_organ;\n" +
+                    "drop table t_role_connect_person;\n" +
+                    "drop table t_organ;\n" +
+                    "drop table t_organ_connect_person;\n" +
+                    "\n" +
+                    "create table t_role(\n" +
                     "  id varchar(64) primary key not null,\n" +
                     "  rolename varchar(32),\n" +
                     "  fullname varchar(64),\n" +
@@ -76,46 +85,31 @@ public class InitaLHendle {
                     "\n" +
                     "create table t_power(\n" +
                     "    id varchaer(64) primary key not null,\n" +
-                    "    type varchar(2),\n" +
+                    "    type varchar(20),\n" +
                     "    createtime date;\n" +
                     ");\n" +
-                    "\n" +
                     "create table t_operation_power{\n" +
                     "    id varchar(64) primary key not null,\n" +
                     "    name varchar(32),\n" +
+                    "    fullname varchar (32),\n" +
                     "    code varchar(20),\n" +
                     "    intercepUrl varchar(256),\n" +
                     "    parentid varchar(64),\n" +
                     "    createTime date;\n" +
                     "};\n" +
-                    "\n" +
-                    "create table t_operation_con_power(\n" +
-                    "    powerid varchar(64),\n" +
-                    "    opid varchar(64)\n" +
-                    ");\n" +
-                    "\n" +
                     "create table t_menu_power(\n" +
                     "    id varchar(64) primary key not null,\n" +
                     "    name varchar(64),\n" +
+                    "    fullname varchar (32),\n" +
                     "    code varchar (64),\n" +
                     "    url varchar (128),\n" +
                     "    parentId varchar (64),\n" +
-                    "    createtime date \n" +
+                    "    createtime date\n" +
                     ") ;\n" +
-                    "\n" +
                     "create table t_menu_con_power(\n" +
                     "    powerid varchar (64),\n" +
                     "    menuid varchar (64);\n" +
-                    ")\n" +
-                    "\n" +
-                    "\n" +
-                    "\n" +
-                    "\n" +
-                    "\n" +
-                    "\n" +
-                    "\n" +
-                    "\n" +
-                    "\n";
+                    ");";
             statement.execute(createSql);
             connection.commit();
         } catch (SQLException e) {
