@@ -14,6 +14,7 @@ public class Person {
     private String emaill;
     private String passworld;
     private String birth;
+    private String native0;
     private String positionId;
     private String remarks;
     private String createName;
@@ -147,5 +148,13 @@ public class Person {
 
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public String getNative0() {
+        return native0;
+    }
+
+    public void setNative0(String native0) {
+        this.native0 = native0;
     }
 }

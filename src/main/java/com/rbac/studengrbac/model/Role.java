@@ -8,11 +8,13 @@ import java.util.Date;
 public class Role {
 
     private String id;
+    private String name;
     private String roleName;
     private String code;
     private Date starDate;
     private Date endDate;
     private String createName;
+    private String remarks;
     private Date createTime;
     private String updateName;
     private Date updateTime;
@@ -87,5 +89,21 @@ public class Role {
 
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
     }
 }

@@ -2,6 +2,9 @@ package com.rbac.studengrbac.servlet;
 
 import com.rbac.studengrbac.hendle.QueryHeadle;
 import com.rbac.studengrbac.model.Organ;
+import com.rbac.studengrbac.model.Person;
+import com.rbac.studengrbac.model.Power;
+import com.rbac.studengrbac.model.Role;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -22,6 +25,19 @@ public class QueryServlet extends HttpServlet {
             List<Organ> list= QueryHeadle.queryOrgan();
             request.setAttribute("orglist",list);
             request.getRequestDispatcher("/view/query/queryOrgan.jsp").forward(request,response);
+        } else if ("queryPower".equalsIgnoreCase(t)) {
+            List<Power> list= QueryHeadle.queryPower();
+            request.setAttribute("listPower",list);
+            request.getRequestDispatcher("/view/query/queryPower.jsp").forward(request,response);
+        }else if ("queryRole".equalsIgnoreCase(t)){
+            List<Role> list= QueryHeadle.queryRole();
+            request.setAttribute("listRole",list);
+            request.getRequestDispatcher("/view/query/queryRole.jsp").forward(request,response);
+        }else if ("queryPerson".equalsIgnoreCase(t)){
+            List<Person> list= QueryHeadle.queryPerson();
+            request.setAttribute("list",list);
+            request.getRequestDispatcher("/view/query/queryPerson.jsp").forward(request,response);
+
         }
     }
 }
