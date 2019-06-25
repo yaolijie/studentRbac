@@ -13,6 +13,7 @@ public class InsertServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException{
+        //InsertServlet?t=insertRole
         String t=request.getParameter("t");
         if ("insertRole".equalsIgnoreCase(t)) {
             InsertHeadle.insertRole(request);
@@ -26,6 +27,8 @@ public class InsertServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException{
+
+        //http://localhost:8080/studentRbac/InsertServlet?t=insertRoleJsp
         String t=request.getParameter("t");
         if ("insertRoleJsp".equalsIgnoreCase(t)){
             request.getRequestDispatcher("/view/insert/insertRole.jsp").forward(request,response);

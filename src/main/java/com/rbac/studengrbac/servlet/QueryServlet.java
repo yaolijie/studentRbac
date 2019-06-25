@@ -20,6 +20,7 @@ public class QueryServlet extends HttpServlet {
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException,ServletException{
+        //QueryServlet?t=queryRole
         String t =request.getParameter("t");
         if ("queryOrgan".equalsIgnoreCase(t)){
             List<Organ> list= QueryHeadle.queryOrgan();

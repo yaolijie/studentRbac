@@ -30,9 +30,9 @@
             <td><%=role.getStarDate()%></td>
             <td><%=role.getEndDate()%></td>
             <td>
-                <button>查看</button>
+                <button onclick="">查看</button>
                 <button>修改</button>
-                <button>删除</button>
+                <button onclick="deleteRole(<%=role.getId()%>)">删除</button>
             </td>
         </tr>
         <%
@@ -41,3 +41,16 @@
         </tbody>
     </table>
 </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    function deleteRole(id){
+
+        $.ajax({
+            url:'<%=path%>/DeleteServlet?t=deleteRole&&id='+id,
+            method:'get',
+            seccess:function (){
+                alert("删除成功！")
+            }
+        });
+    }
+</script>
