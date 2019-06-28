@@ -14,6 +14,7 @@
             <th>权限简称</th>
             <th>权限编码</th>
             <th>权限类型</th>
+            <td>操作</td>
         </tr>
         </thead>
         <tbody>

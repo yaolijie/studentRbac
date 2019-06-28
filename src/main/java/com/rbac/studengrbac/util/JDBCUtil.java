@@ -12,6 +12,7 @@ public class JDBCUtil {
     static {
         try{
             Class.forName("org.h2.Driver");
+            System.out.println("数据库连接对象初始化");
             connection=DriverManager.getConnection("jdbc:h2:~/test","sa","");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

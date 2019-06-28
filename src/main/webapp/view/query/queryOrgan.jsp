@@ -17,6 +17,7 @@
             <td>联系电话</td>
             <td>机构地址</td>
             <td>备注</td>
+            <td>操作</td>
         </tr>
         </thead>
         <tbody>
@@ -32,6 +33,11 @@
             <td><%=organ.getAddress()%></td>
             <td><%=organ.getPhone()%></td>
             <td><%=organ.getRemark()%></td>
+            <td>
+                <button>查看</button>
+                <button>修改</button>
+                <button>删除</button>
+            </td>
         </tr>
         <%
             }
