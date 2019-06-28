@@ -33,7 +33,7 @@ public class InsertServlet extends HttpServlet {
         if ("insertRoleJsp".equalsIgnoreCase(t)){
             request.getRequestDispatcher("/view/insert/insertRole.jsp").forward(request,response);
         }else if ("insertOrganJsp".equalsIgnoreCase(t)){
-            request.getRequestDispatcher("/view/insert/insertRogan.jsp").forward(request,response);
+            request.getRequestDispatcher("/view/insert/insertOrgan.jsp").forward(request,response);
         } else if ("insertPowerJsp".equalsIgnoreCase(t)) {
             request.getRequestDispatcher("/view/insert/insertPower.jsp").forward(request,response);
         }
