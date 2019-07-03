@@ -115,8 +115,35 @@
         <url-pattern>/DeleteServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>QueryObjectServlet</servlet-name>
+        <servlet-class>com.rbac.studengrbac.servlet.QueryObjectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QueryObjectServlet</servlet-name>
+        <url-pattern>/QueryObjectServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>com.rbac.studengrbac.servlet.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateServlet</servlet-name>
+        <url-pattern>/UpdateServlet</url-pattern>
+    </servlet-mapping>
+
     <welcome-file-list>
         <welcome-file>view/index.jsp</welcome-file>
     </welcome-file-list>
-    
+
+    <!--为所有jsp引入一个公共页面-->
+    <jsp-config>
+        <jsp-property-group>
+            <!--为那些资源引入公共页面-->
+            <url-pattern>*.jsp</url-pattern>
+            <!--被引入的公共页面的位置-->
+            <include-prelude>/view/common/common.jsp</include-prelude>
+        </jsp-property-group>
+    </jsp-config>
 </web-app>

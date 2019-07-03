@@ -34,9 +34,9 @@
             <td><%=organ.getPhone()%></td>
             <td><%=organ.getRemark()%></td>
             <td>
-                <button>查看</button>
-                <button>修改</button>
-                <button>删除</button>
+                <button onclick="queryObjectOrgan('<%=organ.getId()%>')">查看</button>
+                <button onclick="updateOr('<%=organ.getId()%>')">修改</button>
+                <button onclick="deletePow('<%=organ.getId()%>')">删除</button>
             </td>
         </tr>
         <%
@@ -45,3 +45,25 @@
         </tbody>
     </table>
 </div>
+<script type="text/javascript">
+    function deleteOr(id){
+        $.ajax({
+            url:'<%=path%>/DeleteServlet?t=deleteOrgan',
+            method:'get'
+        });
+    }
+
+    function updateOr(id){
+        $.ajax({
+            url:'<%=path%>/UpdateServlet?=updateOrgan',
+            method:'get'
+        });
+    }
+
+    function queryObjectOrgan(id){
+        $.ajax({
+            url:'<%=path%>/QueryObjectServlet?=queryOrgan',
+            method:'get'
+        });
+    }
+</script>

@@ -28,9 +28,9 @@
             <td><%=person.getNative0()%></td>
             <td><%=person.getPersonId()%></td>
             <td>
-                <button>查看</button>
-                <button>修改</button>
-                <button>删除</button>
+                <button onclick="queryObjectPerson('<%=person.getId()%>')">查看</button>
+                <button onclick="updatePer('<%=person.getId()%>')">修改</button>
+                <button onclick="deletePer('<%=person.getId()%>')">删除</button>
             </td>
         </tr>
         <%
@@ -39,3 +39,25 @@
         </tbody>
     </table>
 </div>
+<script type="text/javascript">
+    function deletePer(id){
+        $.ajax({
+            url:'<%=path%>/DeleteServlet?=deletePerson',
+            method:'get'
+        });
+    }
+
+    function updatePer(id){
+        $.ajax({
+            url:'<%=path%>/UpdateServlet?=updatePerson',
+            method:'get'
+        });
+    }
+
+    function queryObjectPerson(id){
+        $.ajax({
+            url:'<%=path%>/QueryObjectServlet?=queryPerson',
+            method:'get'
+        });
+    }
+</script>

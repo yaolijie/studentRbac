@@ -28,9 +28,9 @@
             <td><%=power.getCode()%></td>
             <td><%=power.getType()%></td>
             <td>
-                <button>查看</button>
-                <button>修改</button>
-                <button>删除</button>
+                <button onclick="queryObjectPower('<%=power.getId()%>')">查看</button>
+                <button onclick="updatePower('<%=power.getId()%>')">修改</button>
+                <button onclick="deletePow('<%=power.getId()%>')">删除</button>
             </td>
         </tr>
         <%
@@ -39,3 +39,26 @@
         </tbody>
     </table>
 </div>
+<script type="text/javascript">
+    function deletePow(id){
+        $.ajax({
+            url:'<%=path%>/DeleteServlet?=deletePower',
+            method:'get'
+        });
+    }
+
+    function updatePower(id){
+        $.ajax({
+            url:'<%=path%>/UpdateServlet?=updatePower',
+            method:'get'
+        });
+    }
+
+    function queryObjectPower(id){
+        $.ajax({
+            url:'<%=path%>/QueryObjectServlet?=queryPower',
+            method:'get'
+        });
+    }
+
+</script>

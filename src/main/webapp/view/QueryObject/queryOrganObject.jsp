@@ -44,8 +44,7 @@
         </tr>
         <tr>
             <td colspan="2">
-                <input type="submit" name="保存">
-                <input type="reset" value="清空">
+                <input type="button" value="返回">
             </td>
         </tr>
     </table>

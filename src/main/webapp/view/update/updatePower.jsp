@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String path=request.getContextPath();
-    Power power=(Power)request.getAttribute("")
+    Power power=(Power)request.getAttribute("power");
 
 %>
 <div>
@@ -17,29 +17,25 @@
             <tr>
                 <td>权限简称：</td>
                 <td>
-                    <input type="text" name="name">
+                    <input type="text" name="name" value="<%=power.getName()%>">
                 </td>
             </tr>
             <tr>
                 <td>权限编码：</td>
                 <td>
-                    <input type="text" name="code">
+                    <input type="text" name="code" value="<%=power.getCode()%>">
                 </td>
             </tr>
             <tr>
                 <td>链接地址：</td>
                 <td>
-                    <input type="text" name="url">
+                    <input type="text" name="url" value="<%=power.getIntercepUrl()%>">
                 </td>
             </tr>
             <tr>
                 <td>权限类型：</td>
                 <td>
-                    <select name="type">
-                        <option value=""></option>
-                        <option value="menu">菜单权限</option>
-                        <option value="operation">操作权限</option>
-                    </select>
+                    <input type="text" name="url" value="<%=power.getType()%>">
                 </td>
             </tr>
             <tr>

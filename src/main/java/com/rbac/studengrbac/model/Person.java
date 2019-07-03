@@ -21,6 +21,8 @@ public class Person {
     private Date createTime;
     private String updateName;
     private Date updateTime;
+    private String OrganName;
+    private String OrgType;
 
     public String getId() {
         return id;
@@ -156,5 +158,21 @@ public class Person {
 
     public void setNative0(String native0) {
         this.native0 = native0;
+    }
+
+    public String getOrganName() {
+        return OrganName;
+    }
+
+    public void setOrganName(String organName) {
+        OrganName = organName;
+    }
+
+    public String getOrgType() {
+        return OrgType;
+    }
+
+    public void setOrgType(String orgType) {
+        OrgType = orgType;
     }
 }

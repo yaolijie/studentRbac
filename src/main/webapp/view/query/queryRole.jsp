@@ -30,8 +30,8 @@
             <td><%=role.getStarDate()%></td>
             <td><%=role.getEndDate()%></td>
             <td>
-                <button onclick="">查看</button>
-                <button>修改</button>
+                <button onclick="queryObjectRole(<%=role.getId()%>)">查看</button>
+                <button onclick="updateRole(<%=role.getId()%>)">修改</button>
                 <button onclick="deleteRole(<%=role.getId()%>)">删除</button>
             </td>
         </tr>
@@ -51,6 +51,20 @@
             seccess:function (){
                 alert("删除成功！")
             }
+        });
+    }
+
+    function updateRole(id){
+        $.ajax({
+            url:'<%=path%>/UpdateServlet?=updateRole',
+            method:'get'
+        });
+    }
+
+    function queryObjectRole(id){
+        $.ajax({
+            url:'<%=path%>/QueryObjectServlet?=queryRole',
+            method:'get'
         });
     }
 </script>
