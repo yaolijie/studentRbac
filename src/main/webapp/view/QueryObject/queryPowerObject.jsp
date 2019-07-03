@@ -40,8 +40,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="submit" value="保存">
-                    <input type="button" onclick="back();" value="返回">
+                    <input type="button"  onclick="back();" value="返回">
                 </td>
             </tr>
         </table>

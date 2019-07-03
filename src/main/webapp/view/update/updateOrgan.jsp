@@ -45,8 +45,13 @@
         <tr>
             <td colspan="2">
                 <input type="submit" name="保存">
-                <input type="reset" value="清空">
+                <input type="button" onclick="back();" value="返回">
             </td>
         </tr>
     </table>
 </form>
+<script type="text/javascript">
+    function back() {
+        window.history.back();
+    }
+</script>

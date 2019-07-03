@@ -72,9 +72,6 @@
     <table>
         <tr>
             <td>
-                <input type="submit" id="submit" value="保存">
-            </td>
-            <td>
                 <input type="button" onclick="back();" value="返回">
             </td>
         </tr>

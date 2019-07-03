@@ -7,26 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04261096-bfdc-4ac8-aaeb-f82d99476195" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/QueryObjectHeadle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/QueryObjectServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/UpdateServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/QueryObject/queryOrganObject.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/QueryObject/updatePerson.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/QueryObject/updatePower.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/QueryObject/updateRole.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/common/common.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/QueryObject/queryPersonObject.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/QueryObject/queryPowerObject.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/QueryObject/queryRoleObject.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/query/queryOrgan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/query/queryOrgan.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/query/queryPerson.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/query/queryPerson.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/query/queryPower.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/query/queryPower.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/query/queryRole.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/query/queryRole.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/queryObject/queryOrganObject.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/queryObject/queryOrganObject.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/update/updateOrgan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/update/updateOrgan.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/update/updatePerson.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/update/updatePerson.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/update/updatePower.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/update/updatePower.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/update/updateRole.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/update/updateRole.jsp" afterDir="false" />
     </list>
     <list id="fc30f767-7104-4c7a-a9f4-6b01825a2352" name="New changelist" comment="">
       <change beforePath="$PROJECT_DIR$/document/cretateTable" beforeDir="false" afterPath="$PROJECT_DIR$/document/cretateTable" afterDir="false" />
@@ -48,14 +37,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="QueryObjectServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/QueryObjectServlet.java">
+      <file leaf-file-name="updatePower.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updatePower.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="26" column="107" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="26" selection-end-column="107" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="330">
+              <caret line="43" column="70" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updateRole.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateRole.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -72,11 +67,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="queryPerson.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="updateOrgan.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateOrgan.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updatePerson.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updatePerson.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="74" column="58" selection-start-line="74" selection-start-column="58" selection-end-line="74" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queryPerson.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/view/query/queryPerson.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
               <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queryPowerObject.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/queryObject/queryPowerObject.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queryRoleObject.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/queryObject/queryRoleObject.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queryOrganObject.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/queryObject/queryOrganObject.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="46" column="66" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="queryPersonObject.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/queryObject/queryPersonObject.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="74" column="53" selection-start-line="74" selection-start-column="53" selection-end-line="74" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -122,25 +171,28 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/QueryServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/util/JDBCUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/InsertServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/update/updateRole.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/common/common.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/query/queryOrgan.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/query/queryRole.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/query/queryPower.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/query/queryPerson.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/update/updateOrgan.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/model/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/update/updatePerson.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/QueryObject/updatePerson.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/QueryObject/updateOrgan.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/QueryObject/updatePower.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/QueryObject/updateRole.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/QueryObjectHeadle.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/queryObject/queryPowerObject.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/QueryObjectServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/update/updatePower.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/UpdateServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/queryObject/queryPowerObject.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/queryObject/queryOrganObject.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/queryObject/queryPersonObject.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/queryObject/queryRoleObject.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/update/updateOrgan.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/update/updatePerson.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/update/updatePower.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/update/updateRole.jsp" />
       </list>
     </option>
   </component>
@@ -669,7 +721,7 @@
       <workItem from="1561658082946" duration="5873000" />
       <workItem from="1561905870176" duration="3629000" />
       <workItem from="1562133006695" duration="9369000" />
-      <workItem from="1562164921611" duration="1714000" />
+      <workItem from="1562164921611" duration="2284000" />
     </task>
     <task id="LOCAL-00001" summary="修改插入语句">
       <created>1560425699098</created>
@@ -713,14 +765,22 @@
       <option name="project" value="LOCAL" />
       <updated>1561682213762</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="单条数据的查看，修改页面及连接配置&#10;为所有的jsp文件配置一个公共的jsp文件，用于存放公共参数">
+      <created>1562166788026</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1562166788026</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58088000" />
+    <option name="totallyTimeSpent" value="58658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="DB Execution Console" />
@@ -809,7 +869,8 @@
     <MESSAGE value="删除操作" />
     <MESSAGE value="补全页面操作" />
     <MESSAGE value="update页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="update页面" />
+    <MESSAGE value="单条数据的查看，修改页面及连接配置&#10;为所有的jsp文件配置一个公共的jsp文件，用于存放公共参数" />
+    <option name="LAST_COMMIT_MESSAGE" value="单条数据的查看，修改页面及连接配置&#10;为所有的jsp文件配置一个公共的jsp文件，用于存放公共参数" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1165,13 +1226,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateRole.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/QueryObjectHeadle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -1179,55 +1233,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/queryObject/queryRoleObject.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/queryObject/queryPersonObject.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="54" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/queryObject/queryOrganObject.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateOrgan.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="41" column="76" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updatePerson.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1159">
-          <caret line="61" column="92" selection-start-line="61" selection-start-column="92" selection-end-line="61" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/queryObject/queryPowerObject.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updatePower.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -1262,6 +1267,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/queryObject/queryPowerObject.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="42" column="58" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/queryObject/queryRoleObject.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/queryObject/queryOrganObject.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="46" column="66" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/queryObject/queryPersonObject.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="74" column="53" selection-start-line="74" selection-start-column="53" selection-end-line="74" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateOrgan.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updatePerson.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="74" column="58" selection-start-line="74" selection-start-column="58" selection-end-line="74" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updatePower.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="43" column="70" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateRole.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
         </state>
       </provider>
     </entry>

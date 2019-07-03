@@ -44,7 +44,6 @@
         </tr>
         <tr>
             <td align="center" colspan="2">
-                <input type="submit" value="保存">
                 <input type="button" onclick="back();" value="返回">
             </td>
         </tr>
