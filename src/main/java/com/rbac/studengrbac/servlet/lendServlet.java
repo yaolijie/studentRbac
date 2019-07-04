@@ -8,6 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 public class lendServlet  extends HttpServlet {
@@ -28,8 +29,10 @@ public class lendServlet  extends HttpServlet {
 
     public void lend(HttpServletRequest request,HttpServletResponse response){
 
-        String code= (String) request.getAttribute("randomCode");
-        if(code.equalsIgnoreCase(request.getParameter("validationCode"))){
+        String code= (String) request.getParameter("code");
+        HttpSession session=request.getSession();
+        String randomCode=(String) session.getAttribute("randomCode");
+        if(randomCode.equalsIgnoreCase(code)){
             Person resule=LendHendle.lend(request,response);
             if (resule==null){
                 try{

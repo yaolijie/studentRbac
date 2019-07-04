@@ -40,8 +40,8 @@
         <tr>
             <td>验证码 ： </td>
             <td>
-                <input type="text" name="validationCode" id="validationCode"/>
-                <img id="validationCode_img"  src="view/validate.jsp"><br>
+                <input type="text" name="code" id="code"/>
+                <img id="validationCode_img"  src="view/code.jsp"><br>
             </td>
         </tr>
         <tr>

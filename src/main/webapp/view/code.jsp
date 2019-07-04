@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
 <%@page import="java.awt.image.BufferedImage"%>
 <%@page import="java.awt.Graphics2D"%>
 <%@page import="java.awt.Color"%>
@@ -83,7 +81,7 @@
     ServletOutputStream sos = response.getOutputStream();
     ImageIO.write(buffImg, "jpeg", sos);
     sos.close();
-    //sos = null;
+    sos = null;
     out.clear();
     out = pageContext.pushBody();
 %>

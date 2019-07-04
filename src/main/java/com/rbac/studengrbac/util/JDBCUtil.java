@@ -9,7 +9,20 @@ public class JDBCUtil {
     private static Statement statement=null;
 
     private static PreparedStatement preparedStatement=null;
-    static {
+//    static {
+//        try{
+//            Class.forName("org.h2.Driver");
+//            System.out.println("数据库连接对象初始化");
+//            connection=DriverManager.getConnection("jdbc:h2:~/test","sa","");
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//    }
+
+    public static Connection getConnection() {
+
         try{
             Class.forName("org.h2.Driver");
             System.out.println("数据库连接对象初始化");
@@ -19,27 +32,6 @@ public class JDBCUtil {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    }
-
-    public static Connection getConnection() {
         return connection;
     }
-
-//    public static Statement getStatement() {
-//        try{
-//            statement=connection.createStatement();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return statement;
-//    }
-//
-//    public static PreparedStatement getPreparedStatement(String sql) {
-//        try{
-//            preparedStatement=connection.prepareStatement(sql);
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return preparedStatement;
-//    }
 }

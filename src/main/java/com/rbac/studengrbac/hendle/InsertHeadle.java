@@ -2,7 +2,6 @@ package com.rbac.studengrbac.hendle;
 
 import com.rbac.studengrbac.model.Person;
 import com.rbac.studengrbac.util.JDBCUtil;
-import org.h2.jdbcx.JdbcConnectionPool;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -20,7 +19,6 @@ public class InsertHeadle {
 
         Connection connection=null;
         PreparedStatement preparedStatement=null;
-
         try{
             connection= JDBCUtil.getConnection();
             String sql="insert into t_person values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
@@ -126,7 +124,7 @@ public class InsertHeadle {
         PreparedStatement preparedStatement=null;
         try{
             connection=JDBCUtil.getConnection();
-            String sql="insert into t_rolr values(?,?,?,?,?,?,?,?,?,?);";
+            String sql="insert into t_role values(?,?,?,?,?,?,?,?,?,?,?)";
             preparedStatement=connection.prepareStatement(sql);
             String id=UUID.randomUUID().toString();
             preparedStatement.setString(1,id);
