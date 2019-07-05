@@ -3,7 +3,6 @@
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    String path=request.getContextPath();
     List<Organ> list=(List<Organ>)request.getAttribute("orglist");
     int length=list.size();
 %>

@@ -2,9 +2,6 @@
 <html>
 <head>
     <title>添加机构</title>
-    <%
-        String path=request.getContextPath();
-    %>
 </head>
 <body>
 <form action="<%=path%>/InsertServlet?t=insertOrgan" method="post">

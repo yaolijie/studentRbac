@@ -2,7 +2,6 @@
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    String path=request.getContextPath();
     List<Role> list=(List)request.getAttribute("listRole");
     int size=(int)list.size();
 %>

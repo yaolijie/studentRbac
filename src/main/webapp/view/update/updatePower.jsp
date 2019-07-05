@@ -1,7 +1,6 @@
 <%@ page import="com.rbac.studengrbac.model.Power" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    String path=request.getContextPath();
     Power power=(Power)request.getAttribute("power");
 
 %>

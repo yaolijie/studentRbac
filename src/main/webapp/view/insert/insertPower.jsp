@@ -1,8 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
-    String path=request.getContextPath();
-%>
-
 <div>
     <form action="<%=path%>/InsertServlet?t=insertPower" method="post">
         <table >

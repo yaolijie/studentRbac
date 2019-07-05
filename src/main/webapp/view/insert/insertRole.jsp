@@ -2,9 +2,6 @@
 <html>
 <head>
     <title>添加角色</title>
-    <%
-        String path=request.getContextPath();
-    %>
 </head>
 <body>
 <form id="roleForm" action="<%=path%>/InsertServlet?t=insertRole"  method="post">

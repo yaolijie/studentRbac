@@ -1,7 +1,6 @@
 <%@ page import="com.rbac.studengrbac.model.Person" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    String path=request.getContextPath();
     Person person=(Person)request.getAttribute("person");
 %>
 <form id="insertPerson" action="<%=path%>/lendServlet?t=register" method="post">

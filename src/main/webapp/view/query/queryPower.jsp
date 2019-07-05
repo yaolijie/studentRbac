@@ -2,7 +2,6 @@
 <%@ page import="com.rbac.studengrbac.model.Power" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    String path=request.getContextPath();
     List<Power> list=(List)request.getAttribute("listPower");
     int size=list.size();
 %>

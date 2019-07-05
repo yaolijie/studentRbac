@@ -2,10 +2,6 @@
 <html>
 <head>
     <title>用户注册</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <%
-        String path=request.getContextPath();
-    %>
 </head>
 <body>
     <form id="insertPerson" action="<%=path%>/lendServlet?t=register" method="post">

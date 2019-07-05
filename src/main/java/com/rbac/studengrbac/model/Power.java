@@ -12,6 +12,7 @@ public class Power {
     private String intercepUrl;
     private String paretId;
     private Date createTime;
+    private String url;
 
     public String getId() {
         return id;
@@ -75,5 +76,22 @@ public class Power {
 
     public void setParetId(String paretId) {
         this.paretId = paretId;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public Power(String name,String url){
+        this.name=name;
+        this.url=url;
+    }
+
+    public Power(){
+
     }
 }
