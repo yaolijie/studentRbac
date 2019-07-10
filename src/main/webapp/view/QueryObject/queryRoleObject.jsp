@@ -1,7 +1,6 @@
 <%@ page import="com.rbac.studengrbac.model.Role" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    String path=request.getContextPath();
     Role role=(Role)request.getAttribute("role");
 %>
 <form id="roleForm" action="<%=path%>/InsertServlet?t=insertRole"  method="post">

@@ -1,7 +1,6 @@
 <%@ page import="com.rbac.studengrbac.model.Organ" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    String path=request.getContextPath();
     Organ organ=(Organ)request.getAttribute("organ");
 %>
 <form action="<%=path%>/InsertServlet?t=insertOrgan" method="post">

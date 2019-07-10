@@ -141,7 +141,7 @@
     <jsp-config>
         <jsp-property-group>
             <!--为那些资源引入公共页面-->
-            <url-pattern>*.jsp</url-pattern>
+            <url-pattern>*.jsp,*.html</url-pattern>
             <!--被引入的公共页面的位置-->
             <include-prelude>/view/common/common.jsp</include-prelude>
         </jsp-property-group>

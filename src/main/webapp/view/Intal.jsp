@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>初始化数据库</title>
-    <%@ include file="frameJsp.jsp"%>
     <script type="text/javascript">
         function table(){
             $.ajax({
