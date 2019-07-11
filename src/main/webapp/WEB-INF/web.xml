@@ -133,6 +133,15 @@
         <url-pattern>/UpdateServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>MenuServlet</servlet-name>
+        <servlet-class>com.rbac.studengrbac.servlet.MenuServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MenuServlet</servlet-name>
+        <url-pattern>/MenuServlet</url-pattern>
+    </servlet-mapping>
+
     <welcome-file-list>
         <welcome-file>view/index.jsp</welcome-file>
     </welcome-file-list>
@@ -141,7 +150,7 @@
     <jsp-config>
         <jsp-property-group>
             <!--为那些资源引入公共页面-->
-            <url-pattern>*.jsp,*.html</url-pattern>
+            <url-pattern>*.jsp</url-pattern>
             <!--被引入的公共页面的位置-->
             <include-prelude>/view/common/common.jsp</include-prelude>
         </jsp-property-group>

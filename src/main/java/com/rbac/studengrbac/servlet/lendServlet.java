@@ -3,7 +3,6 @@ package com.rbac.studengrbac.servlet;
 import com.rbac.studengrbac.hendle.InsertHeadle;
 import com.rbac.studengrbac.hendle.LendHendle;
 import com.rbac.studengrbac.model.Person;
-import com.rbac.studengrbac.model.Power;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -11,8 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class lendServlet  extends HttpServlet {
 
@@ -47,14 +44,9 @@ public class lendServlet  extends HttpServlet {
                     e.printStackTrace();
                 }
             }else{
-
-                List<Power> list=new ArrayList<>();
-                list.add(new Power("用户信息","/QueryServlet?t=queryPerson"));
-                list.add(new Power("机构信息","/QueryServlet?t=queryOrgan"));
-                request.setAttribute("listPower",list);
                 try{
                     request.getSession().setAttribute("person",resule);
-                    request.getRequestDispatcher("/view/welcom.jsp").forward(request,response);
+                    request.getRequestDispatcher("/view/frame/frame.html").forward(request,response);
                 }catch (IOException e) {
                     e.printStackTrace();
                 } catch (ServletException e) {
