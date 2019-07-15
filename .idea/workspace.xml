@@ -7,12 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04261096-bfdc-4ac8-aaeb-f82d99476195" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/InsertHeadle.java" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/InsertHeadle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/view/frame/frame.html" afterPath="$PROJECT_DIR$/src/main/webapp/view/frame/frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp" />
     </list>
     <list id="fc30f767-7104-4c7a-a9f4-6b01825a2352" name="New changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,12 +33,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Intal.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/Intal.jsp">
+      <file leaf-file-name="frame.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/frame/frame.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.071429">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JDBCUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/util/JDBCUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/InsertServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryObjectServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/QueryObjectServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="107" selection-start-line="24" selection-start-column="12" selection-end-line="26" selection-end-column="107" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertHeadle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/InsertHeadle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="124" column="12" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="12" />
+              <folding>
+                <marker date="1563185356606" expanded="true" signature="726:786" placeholder="insert into t_person... " />
+                <marker date="1563185356606" expanded="true" signature="3283:3343" placeholder="insert into t_person... " />
+                <marker date="1563185356606" expanded="true" signature="5254:5302" placeholder="insert into t_role... " />
+                <marker date="1563185356606" expanded="true" signature="6973:7025" placeholder="insert into t_organ... " />
+                <marker date="1563185356606" expanded="true" signature="9022:9055" placeholder="insert into t_power... " />
+                <marker date="1563185356606" expanded="true" signature="10061:10106" placeholder="insert into t_operation_con_power... " />
+                <marker date="1563185356606" expanded="true" signature="10814:10854" placeholder="insert into t_menu_con_power... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,44 +96,19 @@
       <file leaf-file-name="menuList.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6576577">
-              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+            <state vertical-scroll-proportion="1.1736335">
+              <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/common/common.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0357144">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="frame.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/frame/frame.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.464286">
-              <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
-              <folding>
-                <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#iframe#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java">
+      <file leaf-file-name="QueryServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/QueryServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,7 +117,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/filter/CheckLoginFilter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -103,37 +127,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.321428">
-              <caret line="140" column="29" selection-start-line="140" selection-start-column="29" selection-end-line="140" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.357142">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="code.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/code.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -180,7 +174,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/QueryHeadle.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/Deleteheadle.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/DeleteServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/QueryServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/model/Person.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/QueryObject/updatePerson.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/QueryObject/updateOrgan.jsp" />
@@ -189,9 +182,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/QueryObjectHeadle.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/QueryObjectServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/UpdateServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/util/JDBCUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/InsertHeadle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/InsertServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/code.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/model/Power.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/common/common.jsp" />
@@ -215,9 +205,13 @@
         <option value="$PROJECT_DIR$/src/main/webapp/view/welcom.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/Intal.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/frame/frame.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/frame/frame.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/util/JDBCUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/InsertHeadle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/QueryServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/InsertServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp" />
       </list>
     </option>
@@ -303,6 +297,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -518,6 +515,10 @@
               <option name="myItemId" value="studengrbac" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -604,6 +605,32 @@
               <option name="myItemId" value="studengrbac" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="studentRbac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="studentRbac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="studengrbac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hendle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -611,16 +638,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aqxxzy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bmc" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -1159,7 +1183,11 @@
       <workItem from="1562292145949" duration="1175000" />
       <workItem from="1562301988223" duration="4897000" />
       <workItem from="1562741354179" duration="2514000" />
-      <workItem from="1562837809903" duration="3373000" />
+      <workItem from="1562837809903" duration="3524000" />
+      <workItem from="1562896280563" duration="1338000" />
+      <workItem from="1562912367276" duration="3214000" />
+      <workItem from="1563155799957" duration="1308000" />
+      <workItem from="1563169121963" duration="4343000" />
     </task>
     <task id="LOCAL-00001" summary="修改插入语句">
       <created>1560425699098</created>
@@ -1221,11 +1249,17 @@
       <option name="project" value="LOCAL" />
       <updated>1562751300188</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="添加ifram组件">
+      <created>1562841292738</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1562841292738</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76390000" />
+    <option name="totallyTimeSpent" value="86744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1252,7 +1286,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1285,7 +1319,8 @@
     <MESSAGE value="测试添加数据，页面跳转，重新测试注册登录" />
     <MESSAGE value="项目上下文参数公共化，配置初级菜单显示" />
     <MESSAGE value="创建菜单框架html文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建菜单框架html文件" />
+    <MESSAGE value="添加ifram组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加ifram组件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1346,7 +1381,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/InsertHeadle.java</url>
-          <line>210</line>
+          <line>211</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
@@ -1369,19 +1404,19 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/view/welcom.jsp</url>
           <line>34</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/InsertHeadle.java</url>
+          <line>131</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="23" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1395,13 +1430,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="270" column="43" selection-start-line="270" selection-start-column="43" selection-end-line="270" selection-end-column="43" />
           <folding>
-            <marker date="1562234655569" expanded="true" signature="726:786" placeholder="insert into t_person... " />
-            <marker date="1562234655569" expanded="true" signature="3283:3343" placeholder="insert into t_person... " />
-            <marker date="1562234655569" expanded="true" signature="5254:5302" placeholder="insert into t_role... " />
-            <marker date="1562234655569" expanded="true" signature="6915:6967" placeholder="insert into t_organ... " />
-            <marker date="1562234655569" expanded="true" signature="8964:8997" placeholder="insert into t_power... " />
-            <marker date="1562234655569" expanded="true" signature="10003:10048" placeholder="insert into t_operation_con_power... " />
-            <marker date="1562234655569" expanded="true" signature="10756:10796" placeholder="insert into t_menu_con_power... " />
+            <marker date="1563185356606" expanded="true" signature="726:786" placeholder="insert into t_person... " />
+            <marker date="1563185356606" expanded="true" signature="3283:3343" placeholder="insert into t_person... " />
+            <marker date="1563185356606" expanded="true" signature="5254:5302" placeholder="insert into t_role... " />
+            <marker date="1563185356606" expanded="true" signature="6973:7025" placeholder="insert into t_organ... " />
+            <marker date="1563185356606" expanded="true" signature="9022:9055" placeholder="insert into t_power... " />
+            <marker date="1563185356606" expanded="true" signature="10061:10106" placeholder="insert into t_operation_con_power... " />
+            <marker date="1563185356606" expanded="true" signature="10814:10854" placeholder="insert into t_menu_con_power... " />
           </folding>
         </state>
       </provider>
@@ -1494,24 +1529,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/QueryObjectServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="107" selection-start-line="24" selection-start-column="12" selection-end-line="26" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/UpdateServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="84" selection-start-line="31" selection-start-column="84" selection-end-line="31" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/util/JDBCUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5026178">
-          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -1522,42 +1543,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/InsertHeadle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="238" column="0" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
-          <folding>
-            <marker date="1562234655569" expanded="true" signature="726:786" placeholder="insert into t_person... " />
-            <marker date="1562234655569" expanded="true" signature="3283:3343" placeholder="insert into t_person... " />
-            <marker date="1562234655569" expanded="true" signature="5254:5302" placeholder="insert into t_role... " />
-            <marker date="1562234655569" expanded="true" signature="6915:6967" placeholder="insert into t_organ... " />
-            <marker date="1562234655569" expanded="true" signature="8964:8997" placeholder="insert into t_power... " />
-            <marker date="1562234655569" expanded="true" signature="10003:10048" placeholder="insert into t_operation_con_power... " />
-            <marker date="1562234655569" expanded="true" signature="10756:10796" placeholder="insert into t_menu_con_power... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/LendHendle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/InsertServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28424656">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/QueryServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1587,7 +1576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3571428">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1595,7 +1583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3571428">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1603,7 +1590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3571428">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1611,7 +1597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3571428">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1619,7 +1604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3571428">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1627,7 +1611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3571428">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1635,7 +1618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3571428">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1643,7 +1625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3571428">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1651,7 +1632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1659,7 +1639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.0357144">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1667,7 +1646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1675,7 +1653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1683,7 +1660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1691,7 +1667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1699,7 +1674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="65" selection-start-line="0" selection-start-column="65" selection-end-line="0" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1707,7 +1681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1715,7 +1688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1737,23 +1709,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/view/Intal.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.071429">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/common/common.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0357144">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/view/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.357142">
+        <state vertical-scroll-proportion="0.8216216">
           <caret line="24" column="21" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="21" />
           <folding />
         </state>
@@ -1761,27 +1725,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.321428">
+        <state vertical-scroll-proportion="4.792793">
           <caret line="140" column="29" selection-start-line="140" selection-start-column="29" selection-end-line="140" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/frame/frame.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.464286">
-          <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.2607204">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/common/common.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.1027027">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1789,25 +1752,81 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/filter/CheckLoginFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/util/JDBCUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/InsertHeadle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="124" column="12" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="12" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1563185356606" expanded="true" signature="726:786" placeholder="insert into t_person... " />
+            <marker date="1563185356606" expanded="true" signature="3283:3343" placeholder="insert into t_person... " />
+            <marker date="1563185356606" expanded="true" signature="5254:5302" placeholder="insert into t_role... " />
+            <marker date="1563185356606" expanded="true" signature="6973:7025" placeholder="insert into t_organ... " />
+            <marker date="1563185356606" expanded="true" signature="9022:9055" placeholder="insert into t_power... " />
+            <marker date="1563185356606" expanded="true" signature="10061:10106" placeholder="insert into t_operation_con_power... " />
+            <marker date="1563185356606" expanded="true" signature="10814:10854" placeholder="insert into t_menu_con_power... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/QueryObjectServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="107" selection-start-line="24" selection-start-column="12" selection-end-line="26" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/QueryServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/InsertServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/frame/frame.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6576577">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+        <state vertical-scroll-proportion="1.1736335">
+          <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
           <folding />
         </state>
       </provider>

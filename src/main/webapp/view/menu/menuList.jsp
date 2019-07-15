@@ -5,28 +5,32 @@
         List<Power> list=(List<Power>) request.getAttribute("listPower");
         int i=list.size();
     %>
-<div style="height: 120px;width: auto" >
+<div style="height: 100%;width: 100%">
+    <div style="height:auto;width: 100%;margin-top: 0px;">
+        <ul style="list-style-type: none;">
+            <%
+                for (int j=0;j<i;j++){
+                    Power power=list.get(j);
+            %>
+            <li style="float: left;margin-right: 10px;">
+                <button onclick="querymenu('<%=power.getUrl()%>')"><%=power.getName()%></button>
+            </li>
+            <%
+                }
+            %>
+        </ul>
+    </div>
+    <div>
+        <iframe id="menu" style="margin-top: 20px;height:auto;width: 100%"></iframe>
+    </div>
+</div>
 
-</div>
-<div style="height: 20px;width: auto">
-    <ul>
-        <%
-            for (int j=0;j<i;j++){
-                Power power=list.get(j);
-        %>
-        <li style="float: left;margin-right: 10px;">
-            <button onclick="query(<%=power.getUrl()%>)"><%=power.getName()%></button>
-        </li>
-        <%
-            }
-        %>
-    </ul>
-</div>
-<div>
-    <iframe id="menu"></iframe>
-</div>
 <script type="text/javascript">
-    function query(id){
-       $("#menu").src=<%=path%>+id;
+    $(function () {
+        $("#menu").attr("src","<%=path%>/QueryServlet?t=queryPerson");
+    });
+    function querymenu(id){
+        alert("aaa  "+id );
+       $("#menu").attr("src","<%=path%>"+id);//.src="<%=path%>"+id;
     }
 </script>

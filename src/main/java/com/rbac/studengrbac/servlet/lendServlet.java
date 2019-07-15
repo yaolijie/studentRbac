@@ -46,10 +46,8 @@ public class lendServlet  extends HttpServlet {
             }else{
                 try{
                     request.getSession().setAttribute("person",resule);
-                    request.getRequestDispatcher("/view/frame/frame.html").forward(request,response);
+                    response.sendRedirect("/studentRbac/view/frame/frame.html");
                 }catch (IOException e) {
-                    e.printStackTrace();
-                } catch (ServletException e) {
                     e.printStackTrace();
                 }
             }
