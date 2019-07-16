@@ -13,7 +13,7 @@ public class InsertServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException{
-        //InsertServlet?t=insertRole
+        request.setCharacterEncoding("utf-8");
         String t=request.getParameter("t");
         if ("insertRole".equalsIgnoreCase(t)) {
             InsertHeadle.insertRole(request);
