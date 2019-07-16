@@ -39,23 +39,23 @@
     </table>
 </div>
 <script type="text/javascript">
-    function deletePer(id){
+    function deletePer(deleteid){
         $.ajax({
-            url:'<%=path%>/DeleteServlet?=deletePerson',
+            url:'<%=path%>/DeleteServlet?t=deletePerson&deleteid='+deleteid,
             method:'get'
         });
     }
 
-    function updatePer(id){
+    function updatePer(updateid){
         $.ajax({
-            url:'<%=path%>/UpdateServlet?=updatePerson',
+            url:'<%=path%>/UpdateServlet?t=updatePerson&updateid='+updateid,
             method:'get'
         });
     }
 
-    function queryObjectPerson(id){
+    function queryObjectPerson(queryid){
         $.ajax({
-            url:'<%=path%>/QueryObjectServlet?=queryPerson',
+            url:'<%=path%>/QueryObjectServlet?t=queryPerson&queryid='+queryid,
             method:'get'
         });
     }

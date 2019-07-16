@@ -35,7 +35,7 @@
             <td>
                 <button onclick="queryObjectOrgan('<%=organ.getId()%>')">查看</button>
                 <button onclick="updateOr('<%=organ.getId()%>')">修改</button>
-                <button onclick="deletePow('<%=organ.getId()%>')">删除</button>
+                <button onclick="deleteOr('<%=organ.getId()%>')">删除</button>
             </td>
         </tr>
         <%
@@ -45,23 +45,23 @@
     </table>
 </div>
 <script type="text/javascript">
-    function deleteOr(id){
+    function deleteOr(deleteid){
         $.ajax({
-            url:'<%=path%>/DeleteServlet?t=deleteOrgan',
+            url:'<%=path%>/DeleteServlet?t=deleteOrgan&deleteid='+deleteid,
             method:'get'
         });
     }
 
-    function updateOr(id){
+    function updateOr(updateid){
         $.ajax({
-            url:'<%=path%>/UpdateServlet?=updateOrgan',
+            url:'<%=path%>/UpdateServlet?t=updateOrgan&updateid='+updateid,
             method:'get'
         });
     }
 
-    function queryObjectOrgan(id){
+    function queryObjectOrgan(queryid){
         $.ajax({
-            url:'<%=path%>/QueryObjectServlet?=queryOrgan',
+            url:'<%=path%>/QueryObjectServlet?t=queryOrgan&queryid='+queryid,
             method:'get'
         });
     }

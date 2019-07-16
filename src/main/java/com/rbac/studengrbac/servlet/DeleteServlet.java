@@ -19,13 +19,13 @@ public class DeleteServlet extends HttpServlet {
 
         String t=request.getParameter("t");
         if ("deleteRole".equalsIgnoreCase(t)){
-            Deleteheadle.deleteRole(request.getParameter("id"));
+            Deleteheadle.deleteRole(request.getParameter("deleteid"));
         }else if ("deletePower".equalsIgnoreCase(t)){
-            Deleteheadle.deletePower(request.getParameter("id"));
+            Deleteheadle.deletePower(request.getParameter("deleteid"),request.getParameter("type"));
         }else if ("deletePerson".equalsIgnoreCase(t)){
-            Deleteheadle.deletePerson(request.getParameter("id"));
+            Deleteheadle.deletePerson(request.getParameter("deleteid"));
         }else if ("deleteOrgan".equalsIgnoreCase(t)){
-            Deleteheadle.deleteOrgan(request.getParameter("id"));
+            Deleteheadle.deleteOrgan(request.getParameter("deleteid"));
         }
     }
 

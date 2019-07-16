@@ -27,9 +27,9 @@
             <td><%=power.getCode()%></td>
             <td><%=power.getType()%></td>
             <td>
-                <button onclick="queryObjectPower('<%=power.getId()%>')">查看</button>
-                <button onclick="updatePower('<%=power.getId()%>')">修改</button>
-                <button onclick="deletePow('<%=power.getId()%>')">删除</button>
+                <button onclick="queryObjectPower('<%=power.getId()%>','<%=power.getType()%>')">查看</button>
+                <button onclick="updatePower('<%=power.getId()%>','<%=power.getType()%>')">修改</button>
+                <button onclick="deletePow('<%=power.getId()%>','<%=power.getType()%>')">删除</button>
             </td>
         </tr>
         <%
@@ -39,23 +39,23 @@
     </table>
 </div>
 <script type="text/javascript">
-    function deletePow(id){
+    function deletePow(deleteid,type){
         $.ajax({
-            url:'<%=path%>/DeleteServlet?=deletePower',
+            url:'<%=path%>/DeleteServlet?t=deletePowern&deleteid='+deleteid+'&type='+type,
             method:'get'
         });
     }
 
-    function updatePower(id){
+    function updatePower(updateid,type){
         $.ajax({
-            url:'<%=path%>/UpdateServlet?=updatePower',
+            url:'<%=path%>/UpdateServlet?t=updatePower&updateid='+updateid+'&type='+type,
             method:'get'
         });
     }
 
-    function queryObjectPower(id){
+    function queryObjectPower(queryid,type){
         $.ajax({
-            url:'<%=path%>/QueryObjectServlet?=queryPower',
+            url:'<%=path%>/QueryObjectServlet?t=queryPower&queryid='+queryid+'&type='+type,
             method:'get'
         });
     }

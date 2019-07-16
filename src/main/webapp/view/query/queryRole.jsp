@@ -29,9 +29,9 @@
             <td><%=role.getStarDate()%></td>
             <td><%=role.getEndDate()%></td>
             <td>
-                <button onclick="queryObjectRole(<%=role.getId()%>)">查看</button>
-                <button onclick="updateRole(<%=role.getId()%>)">修改</button>
-                <button onclick="deleteRole(<%=role.getId()%>)">删除</button>
+                <button onclick="queryObjectRole('<%=role.getId()%>')">查看</button>
+                <button onclick="updateRole('<%=role.getId()%>')">修改</button>
+                <button onclick="deleteRole('<%=role.getId()%>')">删除</button>
             </td>
         </tr>
         <%
@@ -42,10 +42,10 @@
 </div>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
-    function deleteRole(id){
+    function deleteRole(deleteid){
 
         $.ajax({
-            url:'<%=path%>/DeleteServlet?t=deleteRole&&id='+id,
+            url:'<%=path%>/DeleteServlet?t=deleteRolen&deleteid='+deleteid,
             method:'get',
             seccess:function (){
                 alert("删除成功！")
@@ -53,16 +53,16 @@
         });
     }
 
-    function updateRole(id){
+    function updateRole(updateid){
         $.ajax({
-            url:'<%=path%>/UpdateServlet?=updateRole',
+            url:'<%=path%>/UpdateServlet?=updateRole&updateid='+updateid,
             method:'get'
         });
     }
 
-    function queryObjectRole(id){
+    function queryObjectRole(queryid){
         $.ajax({
-            url:'<%=path%>/QueryObjectServlet?=queryRole',
+            url:'<%=path%>/QueryObjectServlet?t=queryRole&queryid='+queryid,
             method:'get'
         });
     }
