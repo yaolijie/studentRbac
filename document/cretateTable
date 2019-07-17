@@ -45,6 +45,11 @@ create table t_role_connect_person (
   person varchar(64),
 
 );
+
+create table t_role_connect_power(
+    roleid varchar(64),
+    powerid varchar(64)
+);
 create table t_organ (
   id varchar(64) primary key not null,
   organname varchar(128),

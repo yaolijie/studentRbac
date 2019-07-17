@@ -1,0 +1,12 @@
+delete from T_MENU_CON_POWER  t where t.powerid=;
+delete from T_OPERATION_CON_POWER  tt where tt.powerid=;
+
+delete from T_ORGAN_CONNECT_PERSON t1 where t1.organid=;
+delete from T_ORGAN_CONNECT_PERSON  t2 where t2.personid=;
+
+delete from T_ROLE_CONNECT_PERSON  r where r.roleid=;
+delete froom T_ROLE_CONNECT_PERSON  rr where rr.person=;
+
+delete from t_role_connect_power pow where pow.roleid=;
+delete from t_role_connect_power p where p.powerid=(select  y.id  from T_POWER  y left join T_OPERATION_CON_POWER x where x.OPID = )
+
