@@ -141,6 +141,15 @@
         <servlet-name>MenuServlet</servlet-name>
         <url-pattern>/MenuServlet</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AllocationServlet</servlet-name>
+        <servlet-class>com.rbac.studengrbac.servlet.AllocationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AllocationServlet</servlet-name>
+        <url-pattern>/AllocationServlet</url-pattern>
+    </servlet-mapping>
 
     <welcome-file-list>
         <welcome-file>view/index.jsp</welcome-file>
