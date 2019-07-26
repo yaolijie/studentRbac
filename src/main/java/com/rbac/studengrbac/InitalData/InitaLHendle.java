@@ -17,15 +17,7 @@ public class InitaLHendle {
         try{
             connection= JDBCUtil.getConnection();
             statement=connection.createStatement();
-            String createSql="--10\n" +
-                    "\n" +
-                    "drop table t_role;\n" +
-                    "drop table t_person;\n" +
-                    "drop table t_organ;\n" +
-                    "drop table t_role_connect_person;\n" +
-                    "drop table t_organ;\n" +
-                    "drop table t_organ_connect_person;\n" +
-                    "\n" +
+            String createSql=
                     "create table t_role(\n" +
                     "  id varchar(64) primary key not null,\n" +
                     "  rolename varchar(32),\n" +

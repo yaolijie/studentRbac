@@ -106,4 +106,14 @@ public class Role {
     public void setRemarks(String remarks) {
         this.remarks = remarks;
     }
+
+    public Role(){
+
+    }
+
+    public Role(String id,String roleName,String fullname){
+        this.id=id;
+        this.roleName=roleName;
+        this.name=fullname;
+    }
 }

@@ -94,4 +94,11 @@ public class Power {
     public Power(){
 
     }
+
+    public Power(String id,String  fullName,String name,String url){
+        this.id=id;
+        this.fullName=fullName;
+        this.name= name;
+        this.url=url;
+    }
 }

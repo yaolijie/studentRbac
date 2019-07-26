@@ -1,6 +1,7 @@
 delete from T_MENU_CON_POWER  t where t.powerid=;
 delete from T_OPERATION_CON_POWER  tt where tt.powerid=;
 
+
 delete from T_ORGAN_CONNECT_PERSON t1 where t1.organid=;
 delete from T_ORGAN_CONNECT_PERSON  t2 where t2.personid=;
 

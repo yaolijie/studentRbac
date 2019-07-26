@@ -28,7 +28,7 @@ public class InsertServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException{
 
-        //http://localhost:8080/studentRbac/InsertServlet?t=insertRoleJsp
+        //http://localhost:8080/studentRbac/InsertServlet?t=insertPersonJsp
         String t=request.getParameter("t");
         if ("insertRoleJsp".equalsIgnoreCase(t)){
             request.getRequestDispatcher("/view/insert/insertRole.jsp").forward(request,response);

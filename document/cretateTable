@@ -45,11 +45,13 @@ create table t_role_connect_person (
   person varchar(64),
 
 );
-
+--insert into t_role_connect_person values('','');
 create table t_role_connect_power(
     roleid varchar(64),
     powerid varchar(64)
 );
+
+--insert into t_role_connect_power values('','');
 create table t_organ (
   id varchar(64) primary key not null,
   organname varchar(128),
@@ -95,4 +97,9 @@ create table t_menu_power(
 create table t_menu_con_power(
     powerid varchar (64),
     menuid varchar (64);
+);
+
+create table T_OPERATION_CON_POWER(
+    powerid varchar (64),
+    opid varchar (64);
 );

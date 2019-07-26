@@ -1,5 +1,7 @@
 package com.rbac.studengrbac.servlet;
 
+import com.rbac.studengrbac.hendle.AllocationHandle;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,9 +18,22 @@ public class AllocationServlet extends HttpServlet {
 
         String t=request.getParameter("t");
         if ("allocationPower".equalsIgnoreCase(t)){
+            request= AllocationHandle.roleAllactionPower(request);
             request.getRequestDispatcher("/view/allocation/RoleAllocationPower.jsp").forward(request,response);
         }if ("allocationRole".equalsIgnoreCase(t)){
+            request=AllocationHandle.allocation(request);
             request.getRequestDispatcher("/view/allocation/PersonAllocationRole.jsp").forward(request,response);
+        }
+    }
+
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException,ServletException{
+        String t=request.getParameter("t");
+        if ("allocationRole".equalsIgnoreCase(t)){
+            AllocationHandle.allocationRole(request);
+            return;
+        }else if ("alloctionPower".equalsIgnoreCase(t)){
+            AllocationHandle.alloctionPower(request);
+            return;
         }
     }
 }

@@ -175,4 +175,13 @@ public class Person {
     public void setOrgType(String orgType) {
         OrgType = orgType;
     }
+
+    public Person(){
+
+    }
+
+    public Person(String id,String fullName){
+        this.id=id;
+        this.fullName=fullName;
+    }
 }

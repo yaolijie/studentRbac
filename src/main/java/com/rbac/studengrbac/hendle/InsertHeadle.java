@@ -235,7 +235,7 @@ public class InsertHeadle {
                 p3.setString(2,id);
             }else{
                 String sql2="insert into t_menu_power values(?,?,?,?,?,?,?);";
-                p2=connection.prepareStatement("sql2");
+                p2=connection.prepareStatement(sql2);
                 p2.setString(1,id);
                 p2.setString(2,request.getParameter("name"));
                 p2.setString(3,request.getParameter("fullname"));
