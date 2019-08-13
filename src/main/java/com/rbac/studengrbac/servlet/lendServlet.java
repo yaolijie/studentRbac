@@ -3,6 +3,7 @@ package com.rbac.studengrbac.servlet;
 import com.rbac.studengrbac.hendle.InsertHeadle;
 import com.rbac.studengrbac.hendle.LendHendle;
 import com.rbac.studengrbac.model.Person;
+import com.rbac.studengrbac.model.Power;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.List;
 
 public class lendServlet  extends HttpServlet {
 

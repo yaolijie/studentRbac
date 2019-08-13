@@ -7,21 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04261096-bfdc-4ac8-aaeb-f82d99476195" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/document/得到选择按钮的值" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/AllocationHandle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/cretateTable" beforeDir="false" afterPath="$PROJECT_DIR$/document/cretateTable" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/删除中间表" beforeDir="false" afterPath="$PROJECT_DIR$/document/删除中间表" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/InitalData/InitaLHendle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/InitalData/InitaLHendle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/InsertHeadle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/InsertHeadle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/model/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/model/Power.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/AllocationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/AllocationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/InsertServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/InsertServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/allocation/PersonAllocationRole.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/allocation/PersonAllocationRole.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/allocation/RoleAllocationPower.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/allocation/RoleAllocationPower.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/LendHendle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/LendHendle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp" afterDir="false" />
     </list>
     <list id="fc30f767-7104-4c7a-a9f4-6b01825a2352" name="New changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,41 +31,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RoleAllocationPower.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/allocation/RoleAllocationPower.jsp">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+            <state relative-caret-position="7">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AllocationServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/AllocationServlet.java">
+      <file leaf-file-name="lendServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="228">
+              <caret line="49" column="61" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AllocationHandle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/AllocationHandle.java">
+      <file leaf-file-name="frame.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/frame/frame.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28">
-              <caret line="136" column="11" lean-forward="true" selection-start-line="136" selection-start-column="11" selection-end-line="136" selection-end-column="11" />
+            <state relative-caret-position="76">
+              <caret line="4" column="41" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="41" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersonAllocationRole.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/allocation/PersonAllocationRole.jsp">
+      <file leaf-file-name="MenuServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="285">
+              <caret line="28" column="61" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menuList.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-211">
+              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryHeadle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/QueryHeadle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="164" column="39" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Power.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/model/Power.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -96,6 +113,8 @@
       <find>QueryObjectServlet</find>
       <find>RoleAllocationPower</find>
       <find>T_OPERATION_CON_POWER</find>
+      <find>Menu</find>
+      <find>querymenu</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -110,7 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/QueryHeadle.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/QueryObject/updatePerson.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/QueryObject/updateOrgan.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/QueryObject/updatePower.jsp" />
@@ -132,12 +150,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/view/insert/insertOrgan.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/welcom.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/Intal.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/frame/frame.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/util/JDBCUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/QueryServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/query/queryPerson.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/query/queryOrgan.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/query/queryRole.jsp" />
@@ -161,6 +176,10 @@
         <option value="$PROJECT_DIR$/document/删除中间表" />
         <option value="$PROJECT_DIR$/document/cretateTable" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/allocation/RoleAllocationPower.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/LendHendle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp" />
       </list>
     </option>
   </component>
@@ -219,9 +238,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,6 +312,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="studengrbac" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="studentRbac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studentRbac" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="studengrbac" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="connect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="studentRbac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studentRbac" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="studengrbac" type="462c0819:PsiDirectoryNode" />
               <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -320,10 +357,37 @@
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="allocation" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="studentRbac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studentRbac" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="frame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="studentRbac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studentRbac" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="studentRbac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studentRbac" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -710,7 +774,10 @@
       <workItem from="1563760603527" duration="1185000" />
       <workItem from="1563775180433" duration="11093000" />
       <workItem from="1564066759837" duration="6451000" />
-      <workItem from="1564144973671" duration="1661000" />
+      <workItem from="1564144973671" duration="1899000" />
+      <workItem from="1564151728468" duration="608000" />
+      <workItem from="1564895768087" duration="592000" />
+      <workItem from="1565435546490" duration="5690000" />
     </task>
     <task id="LOCAL-00001" summary="修改插入语句">
       <created>1560425699098</created>
@@ -824,14 +891,22 @@
       <option name="project" value="LOCAL" />
       <updated>1563535380774</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="权限授权角色，角色分配用户关联保存">
+      <created>1564148903272</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1564148903272</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134564000" />
+    <option name="totallyTimeSpent" value="141692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
@@ -845,7 +920,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49394855" visible="true" weight="0.39770868" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49394855" weight="0.39770868" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info id="DB Browser" order="2" weight="0.32980332" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.31914893" />
@@ -854,11 +929,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49394855" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.27659574" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" visible="true" weight="0.27659574" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.204236" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21331316" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32789558" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
@@ -868,6 +942,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32789558" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -900,7 +975,8 @@
     <MESSAGE value="测试所有操作按钮可用，添加查询后台代码" />
     <MESSAGE value="删除数据时同步删除中间表数据" />
     <MESSAGE value="权限授权角色，角色分配用户" />
-    <option name="LAST_COMMIT_MESSAGE" value="权限授权角色，角色分配用户" />
+    <MESSAGE value="权限授权角色，角色分配用户关联保存" />
+    <option name="LAST_COMMIT_MESSAGE" value="权限授权角色，角色分配用户关联保存" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1150,29 +1226,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/welcom.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" selection-start-line="5" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/view/code.jsp">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/Intal.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/view/common/common.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -1188,23 +1243,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/frame/frame.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1216,13 +1254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/LendHendle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1244,13 +1275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="64" column="47" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/QueryHeadle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="177" column="43" selection-start-line="177" selection-start-column="43" selection-end-line="177" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1323,20 +1347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="148" column="21" selection-start-line="148" selection-start-column="21" selection-end-line="148" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/model/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1348,13 +1358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="116" column="27" selection-start-line="116" selection-start-column="27" selection-end-line="116" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/model/Power.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
@@ -1427,32 +1430,112 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/view/allocation/PersonAllocationRole.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
+        <state relative-caret-position="152">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/allocation/RoleAllocationPower.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1653">
+          <caret line="87" column="49" selection-start-line="87" selection-start-column="49" selection-end-line="87" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/AllocationServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="285">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/AllocationHandle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="136" column="11" lean-forward="true" selection-start-line="136" selection-start-column="11" selection-end-line="136" selection-end-column="11" />
+        <state relative-caret-position="691">
+          <caret line="138" column="13" lean-forward="true" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/allocation/RoleAllocationPower.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/welcom.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+        <state relative-caret-position="418">
+          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/Intal.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="137" column="58" selection-start-line="137" selection-start-column="58" selection-end-line="137" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/QueryHeadle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="164" column="39" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/model/Power.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/LendHendle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="49" column="61" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/frame/frame.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="28" column="61" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
         </state>
       </provider>
     </entry>

@@ -1,17 +1,18 @@
 package com.rbac.studengrbac.hendle;
 
 import com.rbac.studengrbac.model.Person;
+import com.rbac.studengrbac.model.Power;
 import com.rbac.studengrbac.util.JDBCUtil;
+import com.sun.corba.se.spi.ior.IdentifiableBase;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Administrator on 2019/6/5.
@@ -72,5 +73,50 @@ public class LendHendle {
             e.printStackTrace();
         }
         return person;
+    }
+
+    public static List<Power> getPower(String id){
+        List<Power> powers=new ArrayList<>();
+        Connection connection=null;
+        PreparedStatement statement=null;
+        try{
+            connection=JDBCUtil.getConnection();
+            String sql="SELECT T.ID,T.TYPE,NVL(T1.FULLNAME,T3.FULLNAME)  AS NAME,NVL(T1.INTERCEPURL ,T3.URL) AS URL FROM T_POWER  T \n" +
+                    "LEFT JOIN T_OPERATION_CON_POWER  TT ON TT.POWERID =T.ID\n" +
+                    "LEFT JOIN T_OPERATION_POWER  T1 ON T1.ID=TT.OPID \n" +
+                    "LEFT JOIN T_MENU_CON_POWER  T2 ON T2.POWERID =T.ID\n" +
+                    "LEFT JOIN T_MENU_POWER  T3 ON T3.ID=T2.MENUID \n" +
+                    "LEFT JOIN T_ROLE_CONNECT_POWER  R ON R.POWERID =T.ID\n" +
+                    "LEFT JOIN T_ROLE  RR ON RR.ID=R.ROLEID\n" +
+                    "LEFT JOIN T_ROLE_CONNECT_PERSON  P ON P.ROLEID =RR.ID\n" +
+                    "LEFT JOIN T_PERSON  PP ON PP.ID=P.PERSON \n" +
+                    "WHERE 1=1\n" +
+                    "AND PP.ID IS NOT NULL \n" +
+                    "AND PP.ID =?";
+            statement=connection.prepareStatement(sql);
+            statement.setString(1,id);
+            ResultSet resultSet=statement.executeQuery();
+            while (resultSet.next()==true){
+                Power power=new Power();
+                power.setId(resultSet.getString("ID"));
+                power.setFullName(resultSet.getString("NAME"));
+                power.setUrl(resultSet.getString("URL"));
+                powers.add(power);
+            }
+            connection.commit();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            if (statement!=null){
+                try{
+                    statement.close();
+                    if (connection!=null)
+                        connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return powers;
     }
 }

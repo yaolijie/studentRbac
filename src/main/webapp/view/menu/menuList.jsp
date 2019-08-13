@@ -11,12 +11,19 @@
             <%
                 for (int j=0;j<i;j++){
                     Power power=list.get(j);
-            %>
-            <li style="float: left;margin-right: 10px;">
-                <button onclick="querymenu('<%=power.getUrl()%>')"><%=power.getName()%></button>
-            </li>
+                    if (power.getType().equalsIgnoreCase("menu")){
+                        String type=power.getType();
+                        String name=power.getFullName();
+                        String id=power.getId();
+                    %>
+                <li style="float: left;margin-right: 10px;">
+                <button onclick="querymenu('<%=id%>')"><%=name%></button>
+                </li>
             <%
-                }
+                        }else{
+                            break;
+                        }
+                    }
             %>
         </ul>
     </div>
