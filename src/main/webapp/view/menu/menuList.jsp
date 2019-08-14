@@ -27,16 +27,13 @@
 
 <script type="text/javascript">
     $(function () {
-       // $("#menu").attr("src","<%=path%>/QueryServlet?t=queryPerson");
-    });
-    function querymenu(id){
-        alert("aaa  "+id );
-       $("#menu").attr("src","<%=path%>"+id);//.src="<%=path%>"+id;
-    }
-    function queryUrl(url){
         var personid=<%=request.getSession().getAttribute("personid")%>
-    //$("#menu").attr("src",url+"&personid="+personid);
+        $("#menu").attr("src","<%=path%>/<%=list.get(0).getUrl()%>"+"&personid="+personid);
+    });
+    function queryUrl(url){
+    var personid=<%=request.getSession().getAttribute("personid")%>
         alert('<%=path%>'+"/"+url+"&personid="+personid);
-        window.location.href='<%=path%>'+"/"+url+"&personid="+personid;
+        //window.location.href='<%=path%>'+"/"+url+"&personid="+personid;
+        $("#menu").attr("src",'<%=path%>'+"/"+url+"&personid="+personid);
     }
 </script>

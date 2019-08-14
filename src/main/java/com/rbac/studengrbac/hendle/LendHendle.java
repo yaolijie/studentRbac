@@ -91,7 +91,7 @@ public class LendHendle {
                     "LEFT JOIN T_ROLE  RR ON RR.ID=R.ROLEID\n" +
                     "LEFT JOIN T_ROLE_CONNECT_PERSON  P ON P.ROLEID =RR.ID\n" +
                     "LEFT JOIN T_PERSON  PP ON PP.ID=P.PERSON \n" +
-                    "WHERE 1=1";
+                    "WHERE 1=1  AND (T1.ID IS NOT NULL OR T3.ID IS NOT NULL)  ";
             if ("admin".equalsIgnoreCase(name)){
                 String sql_t=" and type like '%"+type+"%'";
                 statement=connection.prepareStatement(sql+sql_t);
