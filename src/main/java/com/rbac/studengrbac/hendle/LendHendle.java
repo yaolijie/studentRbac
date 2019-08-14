@@ -3,9 +3,7 @@ package com.rbac.studengrbac.hendle;
 import com.rbac.studengrbac.model.Person;
 import com.rbac.studengrbac.model.Power;
 import com.rbac.studengrbac.util.JDBCUtil;
-import com.sun.corba.se.spi.ior.IdentifiableBase;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -75,7 +73,7 @@ public class LendHendle {
         return person;
     }
 
-    public static List<Power> getPower(String id){
+    public static List<Power> getPower(String name){
         List<Power> powers=new ArrayList<>();
         Connection connection=null;
         PreparedStatement statement=null;
@@ -92,9 +90,9 @@ public class LendHendle {
                     "LEFT JOIN T_PERSON  PP ON PP.ID=P.PERSON \n" +
                     "WHERE 1=1\n" +
                     "AND PP.ID IS NOT NULL \n" +
-                    "AND PP.ID =?";
+                    "AND PP.personname =?";
             statement=connection.prepareStatement(sql);
-            statement.setString(1,id);
+            statement.setString(1,name);
             ResultSet resultSet=statement.executeQuery();
             while (resultSet.next()==true){
                 Power power=new Power();
