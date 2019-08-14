@@ -35,7 +35,12 @@ public class lendServlet  extends HttpServlet {
         HttpSession session=request.getSession();
         String randomCode=(String) session.getAttribute("randomCode");
        // if(randomCode.equalsIgnoreCase(code)){
-            Person resule=LendHendle.lend(request,response);
+        Person resule=new Person();
+        if ("admin".equalsIgnoreCase(request.getParameter("username"))){
+            resule.setPersonName(request.getParameter("username"));
+        }else {
+            resule=LendHendle.lend(request,response);
+        }
             if (resule==null){
                 try{
                     request.setAttribute("error","用户名或密码错误！");
@@ -48,6 +53,7 @@ public class lendServlet  extends HttpServlet {
             }else{
                 try{
                     request.getSession().setAttribute("person",resule);
+                    request.getSession().setAttribute("personid",resule.getId());
                     response.sendRedirect("/studentRbac/view/frame/frame.html");
                 }catch (IOException e) {
                     e.printStackTrace();

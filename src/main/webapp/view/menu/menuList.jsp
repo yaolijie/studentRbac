@@ -11,18 +11,11 @@
             <%
                 for (int j=0;j<i;j++){
                     Power power=list.get(j);
-                    if (power.getType().equalsIgnoreCase("menu")){
-                        String type=power.getType();
-                        String name=power.getFullName();
-                        String id=power.getId();
-                    %>
+            %>
                 <li style="float: left;margin-right: 10px;">
-                <button onclick="querymenu('<%=id%>')"><%=name%></button>
+                <button onclick="queryUrl('<%=power.getUrl()%>')"><%=power.getFullName()%>+<%=j%></button>
                 </li>
             <%
-                        }else{
-                            break;
-                        }
                     }
             %>
         </ul>
@@ -34,10 +27,14 @@
 
 <script type="text/javascript">
     $(function () {
-        $("#menu").attr("src","<%=path%>/QueryServlet?t=queryPerson");
+       // $("#menu").attr("src","<%=path%>/QueryServlet?t=queryPerson");
     });
     function querymenu(id){
         alert("aaa  "+id );
        $("#menu").attr("src","<%=path%>"+id);//.src="<%=path%>"+id;
+    }
+    function queryUrl(url){
+        var personid=<%=request.getSession().getAttribute("personid")%>
+    $("#menu").attr("src",url+"&personid="+personid);
     }
 </script>

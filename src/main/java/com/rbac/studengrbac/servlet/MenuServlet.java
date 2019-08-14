@@ -21,10 +21,11 @@ public class MenuServlet extends HttpServlet {
         String t=request.getParameter("t");
         if ("menulist".equalsIgnoreCase(t)){
             HttpSession session=request.getSession();
+
             Person person=(Person) session.getAttribute("person");
             String name = person.getPersonName();
             //查询出用户的菜单
-            List<Power> list=LendHendle.getPower(name);
+            List<Power> list=LendHendle.getPower(name,"menu");
             request.setAttribute("menus",list);
             request.setAttribute("listPower",list);
             request.getRequestDispatcher("/view/menu/menuList.jsp").forward(request,response);

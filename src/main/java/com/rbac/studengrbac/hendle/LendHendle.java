@@ -42,6 +42,7 @@ public class LendHendle {
                     cookie.setMaxAge(60*60*24);
                     //将cooki保存在客户端
                     response.addCookie(cookie);
+                    person.setId(resultSet.getString("ID"));
                     person.setPersonName(name);
                     person.setPassworld(password);
                 }else{//没有勾选保存密码
@@ -49,6 +50,7 @@ public class LendHendle {
                     cookie.setMaxAge(19);//设置cookie存活时间19s
                     //将cookie保存在客户端
                     response.addCookie(cookie);
+                    person.setId(resultSet.getString("ID"));
                     person.setPersonName(name);
                     person.setPassworld(password);
                 }
@@ -73,13 +75,14 @@ public class LendHendle {
         return person;
     }
 
-    public static List<Power> getPower(String name){
+    public static List<Power> getPower(String name,String type){
         List<Power> powers=new ArrayList<>();
         Connection connection=null;
         PreparedStatement statement=null;
         try{
             connection=JDBCUtil.getConnection();
-            String sql="SELECT T.ID,T.TYPE,NVL(T1.FULLNAME,T3.FULLNAME)  AS NAME,NVL(T1.INTERCEPURL ,T3.URL) AS URL FROM T_POWER  T \n" +
+            String sql="SELECT  T.ID AS ID,T.TYPE AS TYPE,  NVL(T1.FULLNAME,T3.FULLNAME) AS  NAME,NVL(T1.INTERCEPURL ,T3.URL)  AS URL,\n" +
+                    "PP.ID AS PERSONID  FROM T_POWER  T \n" +
                     "LEFT JOIN T_OPERATION_CON_POWER  TT ON TT.POWERID =T.ID\n" +
                     "LEFT JOIN T_OPERATION_POWER  T1 ON T1.ID=TT.OPID \n" +
                     "LEFT JOIN T_MENU_CON_POWER  T2 ON T2.POWERID =T.ID\n" +
@@ -88,16 +91,22 @@ public class LendHendle {
                     "LEFT JOIN T_ROLE  RR ON RR.ID=R.ROLEID\n" +
                     "LEFT JOIN T_ROLE_CONNECT_PERSON  P ON P.ROLEID =RR.ID\n" +
                     "LEFT JOIN T_PERSON  PP ON PP.ID=P.PERSON \n" +
-                    "WHERE 1=1\n" +
-                    "AND PP.ID IS NOT NULL \n" +
-                    "AND PP.personname =?";
-            statement=connection.prepareStatement(sql);
-            statement.setString(1,name);
+                    "WHERE 1=1";
+            if ("admin".equalsIgnoreCase(name)){
+                String sql_t=" and type like '%"+type+"%'";
+                statement=connection.prepareStatement(sql+sql_t);
+            }else{
+                String sql_t="AND PP.ID IS NOT NULL \n" +
+                        "AND PP.personname=?"+" and type like '%"+type+"%'";
+                statement=connection.prepareStatement(sql+sql_t);
+                statement.setString(1,name);
+            }
             ResultSet resultSet=statement.executeQuery();
             while (resultSet.next()==true){
                 Power power=new Power();
                 power.setId(resultSet.getString("ID"));
                 power.setFullName(resultSet.getString("NAME"));
+                power.setType(resultSet.getString("TYPE"));
                 power.setUrl(resultSet.getString("URL"));
                 powers.add(power);
             }
