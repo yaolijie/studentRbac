@@ -6,14 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list id="fc30f767-7104-4c7a-a9f4-6b01825a2352" name="New changelist" comment="" />
-    <list default="true" id="04261096-bfdc-4ac8-aaeb-f82d99476195" name="Default" comment="">
+    <list default="true" id="04261096-bfdc-4ac8-aaeb-f82d99476195" name="Default" comment="数据查询是添加用户id">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/LendHendle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/LendHendle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp" afterDir="false" />
     </list>
+    <list id="fc30f767-7104-4c7a-a9f4-6b01825a2352" name="New changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +31,8 @@
       <file leaf-file-name="menuList.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+            <state relative-caret-position="304">
+              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -52,17 +49,35 @@
       <file leaf-file-name="MenuServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="125">
               <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LendHendle.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LendHendle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/LendHendle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="93" column="30" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="30" />
+            <state relative-caret-position="114">
+              <caret line="119" column="41" lean-forward="true" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertHeadle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/InsertHeadle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="254" selection-start-line="254" selection-end-line="254" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/InsertServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="36" column="34" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -150,8 +165,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/view/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/LendHendle.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp" />
       </list>
     </option>
   </component>
@@ -217,6 +232,11 @@
             <path>
               <item name="studentRbac" type="b2602c69:ProjectViewProjectNode" />
               <item name="studentRbac" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="studentRbac" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studentRbac" type="462c0819:PsiDirectoryNode" />
+              <item name="document" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="studentRbac" type="b2602c69:ProjectViewProjectNode" />
@@ -715,7 +735,7 @@
       <workItem from="1564895768087" duration="592000" />
       <workItem from="1565435546490" duration="5690000" />
       <workItem from="1565777151051" duration="138000" />
-      <workItem from="1565787991866" duration="5240000" />
+      <workItem from="1565787991866" duration="7522000" />
     </task>
     <task id="LOCAL-00001" summary="修改插入语句">
       <created>1560425699098</created>
@@ -843,15 +863,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565788216356</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="数据查询是添加用户id">
+      <created>1565793916686</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1565793916686</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148522000" />
+    <option name="totallyTimeSpent" value="150804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="DB Execution Console" />
@@ -865,18 +891,18 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info id="UI Designer" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49394855" visible="true" weight="0.39770868" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49394855" weight="0.39770868" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info id="DB Browser" />
+      <window_info id="DB Browser" weight="0.32980332" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.31914893" />
       <window_info id="Palette&#9;" order="2" />
       <window_info id="Image Layers" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49394855" weight="0.32789558" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.6781046" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49394855" weight="0.32733223" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" visible="true" weight="0.33060557" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27155825" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27155825" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -892,6 +918,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -922,7 +958,8 @@
     <MESSAGE value="权限授权角色，角色分配用户" />
     <MESSAGE value="权限授权角色，角色分配用户关联保存" />
     <MESSAGE value="取消验证码校验" />
-    <option name="LAST_COMMIT_MESSAGE" value="取消验证码校验" />
+    <MESSAGE value="数据查询是添加用户id" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据查询是添加用户id" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1161,8 +1198,14 @@
           <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/InsertHeadle.java</url>
+          <line>205</line>
+          <properties />
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="72" />
+      <option name="time" value="73" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1431,13 +1474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/InsertServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/DeleteServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1452,13 +1488,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/InsertHeadle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="238" column="35" selection-start-line="238" selection-start-column="35" selection-end-line="238" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1497,13 +1526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/lendServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -1511,17 +1533,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/LendHendle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="119" column="41" lean-forward="true" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/MenuServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="125">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/LendHendle.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/menu/menuList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="93" column="30" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="30" />
+        <state relative-caret-position="304">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/hendle/InsertHeadle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="254" selection-start-line="254" selection-end-line="254" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rbac/studengrbac/servlet/InsertServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="34" />
         </state>
       </provider>
     </entry>

@@ -35,6 +35,8 @@
     }
     function queryUrl(url){
         var personid=<%=request.getSession().getAttribute("personid")%>
-    $("#menu").attr("src",url+"&personid="+personid);
+    //$("#menu").attr("src",url+"&personid="+personid);
+        alert('<%=path%>'+"/"+url+"&personid="+personid);
+        window.location.href='<%=path%>'+"/"+url+"&personid="+personid;
     }
 </script>
