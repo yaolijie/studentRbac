@@ -36,13 +36,13 @@
                 <input type="password" name="passworld" id="passworld" >
             </td>
         </tr>
-        <tr>
-            <td>验证码 ： </td>
-            <td>
-                <input type="text" name="code" id="code"/>
-                <img id="validationCode_img"  src="view/code.jsp"><br>
-            </td>
-        </tr>
+        <%--<tr>--%>
+            <%--<td>验证码 ： </td>--%>
+            <%--<td>--%>
+                <%--<input type="text" name="code" id="code"/>--%>
+                <%--<img id="validationCode_img"  src="view/code.jsp"><br>--%>
+            <%--</td>--%>
+        <%--</tr>--%>
         <tr>
             <td>
                 <input type="submit" value="登陆">

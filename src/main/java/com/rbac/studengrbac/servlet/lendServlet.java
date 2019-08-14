@@ -31,10 +31,10 @@ public class lendServlet  extends HttpServlet {
 
     public void lend(HttpServletRequest request,HttpServletResponse response){
 
-        String code= (String) request.getParameter("code");
+       // String code= (String) request.getParameter("code");
         HttpSession session=request.getSession();
         String randomCode=(String) session.getAttribute("randomCode");
-        if(randomCode.equalsIgnoreCase(code)){
+       // if(randomCode.equalsIgnoreCase(code)){
             Person resule=LendHendle.lend(request,response);
             if (resule==null){
                 try{
@@ -53,17 +53,18 @@ public class lendServlet  extends HttpServlet {
                     e.printStackTrace();
                 }
             }
-        }else{
-            try{
-                request.setAttribute("error","验证码错误！");
-                request.getRequestDispatcher("/view/index.jsp").forward(request,response);
-            } catch (ServletException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-        }
+//        }else{
+//            try{
+//                request.setAttribute("error","验证码错误！");
+//                request.getRequestDispatcher("/view/index.jsp").forward(request,response);
+//            }
+//            catch (ServletException e) {
+//                e.printStackTrace();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//
+//        }
 
 
     }
