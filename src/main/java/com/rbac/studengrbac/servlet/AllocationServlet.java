@@ -19,10 +19,12 @@ public class AllocationServlet extends HttpServlet {
         String t=request.getParameter("t");
         if ("allocationPower".equalsIgnoreCase(t)){
             request= AllocationHandle.roleAllactionPower(request);
-            request.getRequestDispatcher("/view/allocation/RoleAllocationPower.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/allocation/RoleAllocationPower.jsp");
+            //request.getRequestDispatcher("/view/allocation/RoleAllocationPower.jsp").forward(request,response);
         }if ("allocationRole".equalsIgnoreCase(t)){
             request=AllocationHandle.allocation(request);
-            request.getRequestDispatcher("/view/allocation/PersonAllocationRole.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/allocation/PersonAllocationRole.jsp");
+            //request.getRequestDispatcher("/view/allocation/PersonAllocationRole.jsp").forward(request,response);
         }
     }
 

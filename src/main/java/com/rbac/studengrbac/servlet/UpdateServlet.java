@@ -23,19 +23,23 @@ public class UpdateServlet extends HttpServlet {
         if ("updatePower".equalsIgnoreCase(t)){
             Power power=QueryObjectHeadle.queryPower(request.getParameter("updateid"),request.getParameter("type"));
             request.setAttribute("power",power);
-            request.getRequestDispatcher("view/queryObject/queryPowerObject.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/queryObject/queryPowerObject.jsp");
+           // request.getRequestDispatcher("view/queryObject/queryPowerObject.jsp").forward(request,response);
         }else if ("updateOrgan".equalsIgnoreCase(t)){
             Organ organ=QueryObjectHeadle.queryOrgan(request.getParameter("updateid"));
             request.setAttribute("organ",organ);
-            request.getRequestDispatcher("view/queryObject/queryOrganObject.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/queryObject/queryOrganObject.jsp");
+            //request.getRequestDispatcher("view/queryObject/queryOrganObject.jsp").forward(request,response);
         }else if ("updatePerson".equalsIgnoreCase(t)){
             Person person=QueryObjectHeadle.queryPerson(request.getParameter("updateid"));
             request.setAttribute("person",person);
-            request.getRequestDispatcher("view/queryObject/queryPersonObject.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/queryObject/queryPersonObject.jsp");
+           // request.getRequestDispatcher("view/queryObject/queryPersonObject.jsp").forward(request,response);
         }else if ("updateRole".equalsIgnoreCase(t)){
             Role role=QueryObjectHeadle.queryRole(request.getParameter("updateid"));
             request.setAttribute("role",role);
-            request.getRequestDispatcher("view/queryObject/queryRoleObject.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/queryObject/queryRoleObject.jsp");
+           // request.getRequestDispatcher("view/queryObject/queryRoleObject.jsp").forward(request,response);
         }
     }
 }

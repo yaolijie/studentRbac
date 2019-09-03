@@ -31,7 +31,7 @@ public class LendHendle {
             System.out.println("用户信息:name"+name+"    \npassword :"+password);
             String sql="select * from t_person t where t.personname='"+name+"' and t.passworld='"+password+"';";
             ResultSet resultSet=statement.executeQuery(sql);
-            if (resultSet.next()==true){
+            while (resultSet.next()==true){
                 //可以在前台加入是否记录密码
                // response.getWriter().append(request.getParameter(""));
                 if (request.getParameter("save")!=null){
@@ -55,7 +55,6 @@ public class LendHendle {
                     person.setPassworld(password);
                 }
                 System.out.println("cookie设置成功登陆系统");
-            }else{
             }
         } catch (SQLException e) {
             try{

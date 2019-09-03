@@ -24,19 +24,23 @@ public class QueryObjectServlet extends HttpServlet {
         if ("queryRole".equalsIgnoreCase(t)){
             Role role=QueryObjectHeadle.queryRole(request.getParameter("queryid"));
             request.setAttribute("role",role);
-            request.getRequestDispatcher("view/queryObject/queryRoleObject.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/queryObject/queryRoleObject.jsp");
+            //request.getRequestDispatcher("view/queryObject/queryRoleObject.jsp").forward(request,response);
         }else if ("queryPower".equalsIgnoreCase(t)){
             Power power=QueryObjectHeadle.queryPower(request.getParameter("queryid"),request.getParameter("type"));
             request.setAttribute("power",power);
-            request.getRequestDispatcher("view/queryObject/queryPowerObject.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/queryObject/queryPowerObject.jsp");
+           // request.getRequestDispatcher("view/queryObject/queryPowerObject.jsp").forward(request,response);
         }else if ("queryPerson".equalsIgnoreCase(t)){
             Person person=QueryObjectHeadle.queryPerson(request.getParameter("queryid"));
             request.setAttribute("person",person);
-            request.getRequestDispatcher("view/queryObject/queryPersonObject.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/queryObject/queryPersonObject.jsp");
+            //request.getRequestDispatcher("view/queryObject/queryPersonObject.jsp").forward(request,response);
         }else if ("queryOrgan".equalsIgnoreCase(t)){
             Organ organ=QueryObjectHeadle.queryOrgan(request.getParameter("queryid"));
             request.setAttribute("organ",organ);
-            request.getRequestDispatcher("view/queryObject/queryOrganObject.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/queryObject/queryOrganObject.jsp");
+          //  request.getRequestDispatcher("view/queryObject/queryOrganObject.jsp").forward(request,response);
         }
     }
 }

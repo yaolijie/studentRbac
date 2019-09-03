@@ -31,13 +31,17 @@ public class InsertServlet extends HttpServlet {
         //http://localhost:8080/studentRbac/InsertServlet?t=insertPersonJsp
         String t=request.getParameter("t");
         if ("insertRoleJsp".equalsIgnoreCase(t)){
-            request.getRequestDispatcher("/view/insert/insertRole.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/insert/insertRole.jsp");
+           // request.getRequestDispatcher("/view/insert/insertRole.jsp").forward(request,response);
         }else if ("insertOrganJsp".equalsIgnoreCase(t)){
-            request.getRequestDispatcher("/view/insert/insertOrgan.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/insert/insertOrgan.jsp");
+           // request.getRequestDispatcher("/view/insert/insertOrgan.jsp").forward(request,response);
         } else if ("insertPowerJsp".equalsIgnoreCase(t)) {
-            request.getRequestDispatcher("/view/insert/insertPower.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/insert/insertPower.jsp");
+           // request.getRequestDispatcher("/view/insert/insertPower.jsp").forward(request,response);
         }else if("insertPersonJsp".equalsIgnoreCase(t)){
-            request.getRequestDispatcher("/view/insert/insertPerson.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/insert/insertPerson.jsp");
+            //request.getRequestDispatcher("/view/insert/insertPerson.jsp").forward(request,response);
         }
     }
     @Override

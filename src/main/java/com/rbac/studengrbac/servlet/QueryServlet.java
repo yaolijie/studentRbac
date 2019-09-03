@@ -25,19 +25,23 @@ public class QueryServlet extends HttpServlet {
         if ("queryOrgan".equalsIgnoreCase(t)){
             List<Organ> list= QueryHeadle.queryOrgan();
             request.setAttribute("orglist",list);
-            request.getRequestDispatcher("/view/query/queryOrgan.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/query/queryOrgan.jsp");
+           // request.getRequestDispatcher("/view/query/queryOrgan.jsp").forward(request,response);
         } else if ("queryPower".equalsIgnoreCase(t)) {
             List<Power> list= QueryHeadle.queryPower();
             request.setAttribute("listPower",list);
-            request.getRequestDispatcher("/view/query/queryPower.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/query/queryPower.jsp");
+           // request.getRequestDispatcher("/view/query/queryPower.jsp").forward(request,response);
         }else if ("queryRole".equalsIgnoreCase(t)){
             List<Role> list= QueryHeadle.queryRole();
             request.setAttribute("listRole",list);
-            request.getRequestDispatcher("/view/query/queryRole.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/query/queryRole.jsp");
+           // request.getRequestDispatcher("/view/query/queryRole.jsp").forward(request,response);
         }else if ("queryPerson".equalsIgnoreCase(t)){
             List<Person> list= QueryHeadle.queryPerson();
             request.setAttribute("list",list);
-            request.getRequestDispatcher("/view/query/queryPerson.jsp").forward(request,response);
+            response.sendRedirect("/studentRbac/view/query/queryPerson.jsp");
+           // request.getRequestDispatcher("/view/query/queryPerson.jsp").forward(request,response);
 
         }
     }
