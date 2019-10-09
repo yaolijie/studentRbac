@@ -1,4 +1,10 @@
+<%@ page import="java.util.List" %>
+<%@ page import="com.rbac.studengrbac.model.Power" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    List<Power> powers=(List)request.getAttribute("selectPower");
+    int size=powers.size();
+%>
 <div>
     <form action="<%=path%>/InsertServlet?t=insertPower" method="post">
         <table >
@@ -18,6 +24,22 @@
                 <td>权限编码：</td>
                 <td>
                     <input type="text" name="code">
+                </td>
+            </tr>
+            <tr>
+                <td>上级权限：</td>
+                <td>
+                    <select name="parentid">
+                        <option value=""></option>
+                        <%
+                            for (int i=0;i<size;i++){
+                                Power power=powers.get(i);
+                        %>
+                        <option value="<%=power.getId()%>"><%=power.getFullName()%></option>
+                        <%
+                            }
+                        %>
+                    </select>
                 </td>
             </tr>
             <tr>

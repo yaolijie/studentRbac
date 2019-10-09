@@ -28,6 +28,7 @@
             <tr>
                 <td>用户名 ：</td>
                 <td>
+
                     <input type="text" name="username" id="username">
                 </td>
             </tr>

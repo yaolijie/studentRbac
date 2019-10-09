@@ -13,7 +13,7 @@
                     Power power=list.get(j);
             %>
                 <li style="float: left;margin-right: 10px;">
-                <button onclick="queryUrl('<%=power.getUrl()%>')"><%=power.getFullName()%>+<%=j%></button>
+                <button onclick="queryUrl('<%=power.getUrl()%>')"><%=power.getFullName()%></button>
                 </li>
             <%
                     }

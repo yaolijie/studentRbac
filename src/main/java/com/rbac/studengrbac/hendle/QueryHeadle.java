@@ -156,7 +156,12 @@ public class QueryHeadle
         try{
             connection=JDBCUtil.getConnection();
             statement=connection.createStatement();
-            String sql="select * from t_power t";
+            String sql="SELECT nvl(p2.id,t1.id) id, p.type,nvl(p2.code,t1.code) code , nvl(p2.name,t1.name) name,nvl(p2.fullname,t1.fullname) fullname\n" +
+                    "FROM T_POWER  p left join T_MENU_CON_POWER  p1 on p1.powerid=p.id\n" +
+                    "left join T_MENU_POWER  p2 on p2.id=p1.menuid \n" +
+                    "left join T_OPERATION_CON_POWER  t on t.powerid=p.id\n" +
+                    "left join T_OPERATION_POWER t1 on t.opid=t1.id\n" +
+                    "where 1=1 and (p2.id is not null or t1.id is not null)";
             ResultSet resultSet=statement.executeQuery(sql);
             while (resultSet.next()){
                 Power power=new Power();
